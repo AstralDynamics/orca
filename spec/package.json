@@ -1,7 +1,7 @@
 {
   "name": "nursing-spec",
   "version": "1.0.0",
-  "description": "Disclaimer",
+  "description": "",
   "main": "index.js",
   "dependencies": {},
   "devDependencies": {
@@ -11,9 +11,9 @@
   "scripts": {
     "build": "gitbook build",
     "serve": "gitbook serve",
-    "publish": "surge -d orcaspec.surge.sh _book"
+    "publish": "surge -d orcaspec.surge.sh _book",
+    "deploy": "npm run build && npm run publish"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "author": "Astral Dynamics"
 }

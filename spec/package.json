@@ -1,0 +1,17 @@
+{
+  "name": "nursing-spec",
+  "version": "1.0.0",
+  "description": "Disclaimer",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "gitbook-cli": "^2.3.0"
+  },
+  "scripts": {
+    "build": "gitbook build",
+    "serve": "gitbook serve"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

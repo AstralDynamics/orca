@@ -6,5 +6,5 @@ deployment:
   spec:
     branch: master
     commands:
-      - cd spec && npm run build && npm run deploy
+      - cd spec && npm install && npm run build && npm run deploy
 

@@ -5,11 +5,13 @@
   "main": "index.js",
   "dependencies": {},
   "devDependencies": {
-    "gitbook-cli": "^2.3.0"
+    "gitbook-cli": "^2.3.0",
+    "surge": "^0.18.0"
   },
   "scripts": {
     "build": "gitbook build",
-    "serve": "gitbook serve"
+    "serve": "gitbook serve",
+    "publish": "surge -d orcaspec.surge.sh _book"
   },
   "keywords": [],
   "author": "",

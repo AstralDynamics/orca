@@ -1,0 +1,10 @@
+machine:
+  node:
+    version: 5.0.0
+
+deployment:
+  spec:
+    branch: master
+    commands:
+      - cd spec && npm run build && npm run deploy
+

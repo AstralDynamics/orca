@@ -3,6 +3,10 @@ machine:
     version: 5.0.0
 
 deployment:
+  requirements:
+    branch: master
+    commands:
+      - cd reqs && npm install && npm run deploy
   spec:
     branch: master
     commands:

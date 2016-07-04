@@ -1,6 +1,7 @@
 # Summary
 
 * [Introduction](README.md)
+* [Background](background.md)
 * [Scenarios](scenarios/README.md)
   * [Scenario 1: Student](scenarios/student.md)
   * [Scenario 2: Mentor](scenarios/mentor.md)
@@ -12,8 +13,10 @@
   * [Flow 3: Tutor](flows/tutor.md)
   * [Flow 4: Administrator](flows/admin.md)
 * [Screens](screens/README.md)
+  * [Student Dashboard](screens/student-dashboard.md)
+  * [Mentor Dashboard](screens/mentor-dashboard.md)
+  * [Tutor Dashboard](screens/tutor-dashboard.md)
 * [Requirements](requirements/README.md)
 * [Notes](notes/README.md)
   * [Tutor](notes/tutor.md)
-
 

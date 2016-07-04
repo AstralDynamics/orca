@@ -1,7 +1,6 @@
 # Functional Specification
 
-__Version__: {{ config.version }}  
-__Generated__: {{ gitbook.time }}
+{% include "./meta.md" %}
 
 ---
 

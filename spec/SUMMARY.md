@@ -25,9 +25,7 @@
   * [Mentor](models/mentor.md)
   * [Tutor](models/tutor.md)
   * [Admin](models/admin.md)
-* [Project Plan](plan/README.md)
+* Project Plan
   * [Deliverables](plan/deliverables.md)
   * [Development](plan/development.md)
-* [Notes](notes/README.md)
-  * [Tutor](notes/tutor.md)
 

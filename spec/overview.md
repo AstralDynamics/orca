@@ -11,9 +11,5 @@ Tutors will use the platform in a similar way to mentors but the interfaces they
 ## Extensibility
 As the first phase of a multi-contract development process, this platform is being designed with extensibility in mind. Where possible, Astral Dynamics will ensure that this foundation can be extended to support potential future features and enhancements.
 
-## Generic Design
-* Cater for application to other spaces
-* Use normalized language - e.g. achievements, not competencies
-
 [1]: http://astraldynamics.co.uk
 

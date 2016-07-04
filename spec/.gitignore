@@ -1,4 +1,4 @@
 _book
 node_modules
 *.log
-meta.md
+_version

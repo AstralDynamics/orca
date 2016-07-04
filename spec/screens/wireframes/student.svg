@@ -25,9 +25,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.70710678"
-     inkscape:cx="307.18921"
-     inkscape:cy="513.15286"
+     inkscape:zoom="0.5"
+     inkscape:cx="186.07614"
+     inkscape:cy="337.84407"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -48,7 +48,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -63,34 +63,34 @@
        width="488.43524"
        height="95.747314"
        x="-572.75616"
-       y="89.461731"
+       y="149.46173"
        rx="9.0895452"
        ry="9.0895452"
        transform="scale(-1,1)" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        x="218.91882"
-       y="148.31628"
+       y="208.31628"
        id="text7762"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan7764"
          x="218.91882"
-         y="148.31628"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:25px;font-family:'League Spartan';-inkscape-font-specification:'League Spartan Bold';fill:#000000;fill-opacity:1;">Generic Competency 3</tspan></text>
+         y="208.31628"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:25px;font-family:'League Spartan';-inkscape-font-specification:'League Spartan Bold';fill:#000000;fill-opacity:1">Generic Competency 3</tspan></text>
     <circle
        style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#000000;fill-opacity:0;fill-rule:nonzero;stroke:none;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
        id="path7854"
        cx="-129.04099"
-       cy="137.18413"
+       cy="197.18413"
        r="47.497292"
        transform="scale(-1,1)" />
     <circle
        style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#e2e2e2;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
        id="path7854-4"
        cx="-129.04099"
-       cy="137.18413"
+       cy="197.18413"
        r="35.354435"
        transform="scale(-1,1)" />
     <path
@@ -99,17 +99,17 @@
        transform="scale(-1,1)"
        sodipodi:type="arc"
        sodipodi:cx="-129.04099"
-       sodipodi:cy="137.18413"
+       sodipodi:cy="197.18413"
        sodipodi:rx="47.497292"
        sodipodi:ry="47.497292"
        sodipodi:start="0"
        sodipodi:end="4.712389"
-       d="m -81.543694,137.18413 a 47.497292,47.497292 0 0 1 -29.320866,43.88177 47.497292,47.497292 0 0 1 -51.76208,-10.29612 47.497292,47.497292 0 0 1 -10.29612,-51.76208 47.497292,47.497292 0 0 1 43.88178,-29.320864 l -1e-5,47.497294 z" />
+       d="m -81.543694,197.18413 a 47.497292,47.497292 0 0 1 -29.320866,43.88177 47.497292,47.497292 0 0 1 -51.76208,-10.29612 47.497292,47.497292 0 0 1 -10.29612,-51.76208 47.497292,47.497292 0 0 1 43.88178,-29.32086 l -1e-5,47.49729 z" />
     <circle
        style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
        id="path7854-4-7"
        cx="-129.04099"
-       cy="137.18413"
+       cy="197.18413"
        r="35.354435"
        transform="scale(-1,1)" />
     <rect
@@ -118,7 +118,7 @@
        width="490.61218"
        height="253.60443"
        x="81.543686"
-       y="245.46173"
+       y="305.46173"
        rx="9.0895452"
        ry="9.6200733" />
     <rect
@@ -127,7 +127,7 @@
        width="449.89792"
        height="95.747314"
        x="-572.75616"
-       y="193.46173"
+       y="253.46173"
        rx="9.0895452"
        ry="9.0895452"
        transform="scale(-1,1)" />
@@ -135,57 +135,57 @@
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        x="218.91882"
-       y="252.31628"
+       y="312.31628"
        id="text7762-5"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan7764-0"
          x="218.91882"
-         y="252.31628"
+         y="312.31628"
          style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:25px;font-family:'League Spartan';-inkscape-font-specification:'League Spartan Bold';fill:#5b5b5b;fill-opacity:1">Generic Competency 4</tspan></text>
     <circle
        style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
        id="path7854-8-8"
        cx="-129.04099"
-       cy="241.18414"
+       cy="301.18414"
        r="47.497292"
        transform="scale(-1,1)" />
     <circle
        style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#e2e2e2;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
        id="path7854-4-0"
        cx="-129.04099"
-       cy="241.18414"
+       cy="301.18414"
        r="35.354435"
        transform="scale(-1,1)" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        x="218.91882"
-       y="252.31628"
+       y="312.31628"
        id="text7762-9-2"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan7764-8-2"
          x="218.91882"
-         y="252.31628"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:25px;font-family:'League Spartan';-inkscape-font-specification:'League Spartan Bold';fill:#000000;fill-opacity:1;">Generic Competency 4</tspan></text>
+         y="312.31628"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:25px;font-family:'League Spartan';-inkscape-font-specification:'League Spartan Bold';fill:#000000;fill-opacity:1">Generic Competency 4</tspan></text>
     <path
        style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
        id="path7854-0-3-4"
        transform="scale(-1,1)"
        sodipodi:type="arc"
        sodipodi:cx="-129.04099"
-       sodipodi:cy="241.18414"
+       sodipodi:cy="301.18414"
        sodipodi:rx="47.497292"
        sodipodi:ry="47.497292"
        sodipodi:start="2.268928"
        sodipodi:end="4.712389"
-       d="m -159.57165,277.56918 a 47.497292,47.497292 0 0 1 -14.10219,-52.63007 47.497292,47.497292 0 0 1 44.63286,-31.25226 l -1e-5,47.49729 z" />
+       d="m -159.57165,337.56918 a 47.497292,47.497292 0 0 1 -14.10219,-52.63007 47.497292,47.497292 0 0 1 44.63286,-31.25226 l -1e-5,47.49729 z" />
     <circle
        style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
        id="path7854-4-7-7"
        cx="-129.04099"
-       cy="241.18414"
+       cy="301.18414"
        r="35.354435"
        transform="scale(-1,1)" />
     <flowRoot
@@ -201,17 +201,17 @@
          id="flowPara8041" /></flowRoot>    <flowRoot
        xml:space="preserve"
        id="flowRoot9750"
-       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"
-       transform="translate(-16,-180)"><flowRegion
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       transform="translate(-16,-120)"><flowRegion
          id="flowRegion9752"><rect
            id="rect9754"
            width="462.85712"
            height="103.5714"
            x="112.14286"
            y="484.50507"
-           style="fill:#000000;fill-opacity:1;" /></flowRegion><flowPara
+           style="fill:#000000;fill-opacity:1" /></flowRegion><flowPara
          id="flowPara9756"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:20px;font-family:'League Spartan';-inkscape-font-specification:'League Spartan Bold';fill:#000000;fill-opacity:1;">Recognises the need to promote self-care where appropriate.</flowPara></flowRoot>    <text
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:20px;font-family:'League Spartan';-inkscape-font-specification:'League Spartan Bold';fill:#000000;fill-opacity:1">Recognises the need to promote self-care where appropriate.</flowPara></flowRoot>    <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        x="203.04066"
@@ -228,120 +228,120 @@
        width="390.62503"
        height="5.7142944"
        x="129.57143"
-       y="397.64795"
+       y="457.64795"
        rx="12.12"
        ry="2.8571472" />
     <circle
        style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
        id="path9803"
        cx="138.71429"
-       cy="399.93365"
+       cy="459.93365"
        r="16.428572" />
     <circle
        style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
        id="path9803-7"
        cx="320.71429"
-       cy="399.93365"
+       cy="459.93365"
        r="16.428572" />
     <circle
        style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
        id="path9803-7-9"
        cx="504.71429"
-       cy="399.93365"
+       cy="459.93365"
        r="16.428572" />
     <circle
        style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
        id="path9803-0"
        cx="138.71429"
-       cy="399.93365"
+       cy="459.93365"
        r="6.8321223" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        x="138.53989"
-       y="437.93365"
+       y="497.93365"
        id="text9889"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan9891"
          x="138.53989"
-         y="437.93365"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:12.5px;font-family:'League Spartan';-inkscape-font-specification:'League Spartan Bold';text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;">Feedback</tspan><tspan
+         y="497.93365"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:12.5px;font-family:'League Spartan';-inkscape-font-specification:'League Spartan Bold';text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1">Feedback</tspan><tspan
          sodipodi:role="line"
          x="138.53989"
-         y="453.55865"
+         y="513.55865"
          id="tspan9893"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:12.5px;font-family:'League Spartan';-inkscape-font-specification:'League Spartan Bold';text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;">From</tspan><tspan
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:12.5px;font-family:'League Spartan';-inkscape-font-specification:'League Spartan Bold';text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1">From</tspan><tspan
          sodipodi:role="line"
          x="138.53989"
-         y="469.18365"
+         y="529.18365"
          id="tspan9895"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:12.5px;font-family:'League Spartan';-inkscape-font-specification:'League Spartan Bold';text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;">Others</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:12.5px;font-family:'League Spartan';-inkscape-font-specification:'League Spartan Bold';text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1">Others</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#b2b2b2;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        x="322.53989"
-       y="437.93365"
+       y="497.93365"
        id="text9889-8"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          x="322.53989"
-         y="437.93365"
+         y="497.93365"
          id="tspan9895-2"
          style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:12.5px;font-family:'League Spartan';-inkscape-font-specification:'League Spartan Bold';text-align:center;text-anchor:middle;fill:#b2b2b2;fill-opacity:1">Direct</tspan><tspan
          sodipodi:role="line"
          x="322.53989"
-         y="453.55865"
+         y="513.55865"
          style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:12.5px;font-family:'League Spartan';-inkscape-font-specification:'League Spartan Bold';text-align:center;text-anchor:middle;fill:#b2b2b2;fill-opacity:1"
          id="tspan9926">Observation</tspan><tspan
          sodipodi:role="line"
          x="322.53989"
-         y="469.18365"
+         y="529.18365"
          style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:12.5px;font-family:'League Spartan';-inkscape-font-specification:'League Spartan Bold';text-align:center;text-anchor:middle;fill:#b2b2b2;fill-opacity:1"
          id="tspan9928">&amp; Questions</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        x="322.53989"
-       y="437.93365"
+       y="497.93365"
        id="text9889-8-4"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          x="322.53989"
-         y="437.93365"
+         y="497.93365"
          id="tspan9895-2-7"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:12.5px;font-family:'League Spartan';-inkscape-font-specification:'League Spartan Bold';text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;">Direct</tspan><tspan
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:12.5px;font-family:'League Spartan';-inkscape-font-specification:'League Spartan Bold';text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1">Direct</tspan><tspan
          sodipodi:role="line"
          x="322.53989"
-         y="453.55865"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:12.5px;font-family:'League Spartan';-inkscape-font-specification:'League Spartan Bold';text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;"
+         y="513.55865"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:12.5px;font-family:'League Spartan';-inkscape-font-specification:'League Spartan Bold';text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1"
          id="tspan9926-9">Observation</tspan><tspan
          sodipodi:role="line"
          x="322.53989"
-         y="469.18365"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:12.5px;font-family:'League Spartan';-inkscape-font-specification:'League Spartan Bold';text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;"
+         y="529.18365"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:12.5px;font-family:'League Spartan';-inkscape-font-specification:'League Spartan Bold';text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1"
          id="tspan9928-9">&amp; Questions</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        x="502.53989"
-       y="437.93365"
+       y="497.93365"
        id="text9889-8-4-2"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          x="502.53989"
-         y="437.93365"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:12.5px;font-family:'League Spartan';-inkscape-font-specification:'League Spartan Bold';text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;"
+         y="497.93365"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:12.5px;font-family:'League Spartan';-inkscape-font-specification:'League Spartan Bold';text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1"
          id="tspan9983">Client /</tspan><tspan
          sodipodi:role="line"
          x="502.53989"
-         y="453.55865"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:12.5px;font-family:'League Spartan';-inkscape-font-specification:'League Spartan Bold';text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;"
+         y="513.55865"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:12.5px;font-family:'League Spartan';-inkscape-font-specification:'League Spartan Bold';text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1"
          id="tspan9987">Service User</tspan><tspan
          sodipodi:role="line"
          x="502.53989"
-         y="469.18365"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:12.5px;font-family:'League Spartan';-inkscape-font-specification:'League Spartan Bold';text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;"
+         y="529.18365"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:12.5px;font-family:'League Spartan';-inkscape-font-specification:'League Spartan Bold';text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1"
          id="tspan9989">Documentation</tspan></text>
     <rect
        style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
@@ -349,22 +349,22 @@
        width="489.85983"
        height="92.47847"
        x="-572.75616"
-       y="507.46173"
+       y="567.46173"
        rx="9.0895452"
        ry="9.0895452"
        transform="scale(-1,1)" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        x="180.91882"
-       y="564.31628"
+       y="624.31628"
        id="text7762-6"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan7764-1"
          x="180.91882"
-         y="564.31628"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:25px;font-family:'League Spartan';-inkscape-font-specification:'League Spartan Bold';fill:#000000;fill-opacity:1;">Generic Competency 5 </tspan></text>
+         y="624.31628"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:25px;font-family:'League Spartan';-inkscape-font-specification:'League Spartan Bold';fill:#000000;fill-opacity:1">Generic Competency 5 </tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
@@ -379,53 +379,53 @@
          style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:25px;font-family:'League Spartan';-inkscape-font-specification:'League Spartan Bold';fill:#5b5b5b;fill-opacity:1" /></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        x="114"
-       y="258.79077"
+       y="318.79077"
        id="text10024-3-0"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan10026-8-6"
          x="114"
-         y="258.79077"></tspan></text>
+         y="318.79077"></tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        x="114"
-       y="154.79077"
+       y="214.79077"
        id="text10024-3-0-6"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan10026-8-6-1"
          x="114"
-         y="154.79077"></tspan></text>
+         y="214.79077"></tspan></text>
     <rect
        style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
        id="rect7745-6-2"
        width="449.89792"
        height="95.747314"
        x="-572.75616"
-       y="607.46173"
+       y="667.46173"
        rx="9.0895452"
        ry="9.0895452"
        transform="scale(-1,1)" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        x="218.91882"
-       y="666.31628"
+       y="726.31628"
        id="text7762-6-8"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan7764-1-7"
          x="218.91882"
-         y="666.31628"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:25px;font-family:'League Spartan';-inkscape-font-specification:'League Spartan Bold';fill:#000000;fill-opacity:1;">Generic Competency 6 </tspan></text>
+         y="726.31628"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:25px;font-family:'League Spartan';-inkscape-font-specification:'League Spartan Bold';fill:#000000;fill-opacity:1">Generic Competency 6 </tspan></text>
     <circle
        style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#e9e9e9;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
        id="path7854-7-0"
        cx="-129.04099"
-       cy="655.18414"
+       cy="715.18414"
        r="47.497292"
        transform="scale(-1,1)" />
     <path
@@ -433,25 +433,25 @@
        id="path7854-0-2-9"
        sodipodi:type="arc"
        sodipodi:cx="-129.04099"
-       sodipodi:cy="655.18414"
+       sodipodi:cy="715.18414"
        sodipodi:rx="47.497292"
        sodipodi:ry="47.497292"
        sodipodi:start="4.712389"
        sodipodi:end="2.268928"
-       d="m -129.04098,607.68685 a 47.497292,47.497292 0 0 1 45.501902,33.87492 47.497292,47.497292 0 0 1 -19.401722,53.30578 47.497292,47.497292 0 0 1 -56.63085,-3.29837 l 30.53066,-36.38504 z"
+       d="m -129.04098,667.68685 a 47.497292,47.497292 0 0 1 45.501902,33.87492 47.497292,47.497292 0 0 1 -19.401722,53.30578 47.497292,47.497292 0 0 1 -56.63085,-3.29837 l 30.53066,-36.38504 z"
        transform="scale(-1,1)" />
     <circle
        style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#e2e2e2;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
        id="path7854-4-07-7"
        cx="-129.04099"
-       cy="655.18414"
+       cy="715.18414"
        r="35.354435"
        transform="scale(-1,1)" />
     <circle
        style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#f1f1f1;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
        id="path7854-8-6-2"
        cx="-129.04099"
-       cy="655.18414"
+       cy="715.18414"
        r="47.497292"
        transform="scale(-1,1)" />
     <circle
@@ -459,105 +459,100 @@
        id="path7854-0-3-6-1"
        transform="scale(-1,1)"
        cx="-129.04099"
-       cy="655.18414"
+       cy="715.18414"
        r="47.497292" />
     <circle
        style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
        id="path7854-4-7-3-5"
        cx="-129.04099"
-       cy="655.18414"
+       cy="715.18414"
        r="35.354435"
        transform="scale(-1,1)" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        x="109.40827"
-       y="672.16589"
+       y="732.16589"
        id="text10024-3-7"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan10026-8-7"
          x="109.40827"
-         y="672.16589"></tspan></text>
-    <rect
-       style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
-       id="rect7745-6-2-7"
-       width="449.89792"
-       height="95.747314"
-       x="-572.75616"
-       y="711.46173"
-       rx="9.0895452"
-       ry="9.0895452"
-       transform="scale(-1,1)" />
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"
-       x="218.91882"
-       y="770.31628"
-       id="text7762-6-8-6"
-       sodipodi:linespacing="125%"><tspan
-         sodipodi:role="line"
-         id="tspan7764-1-7-4"
-         x="218.91882"
-         y="770.31628"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:25px;font-family:'League Spartan';-inkscape-font-specification:'League Spartan Bold';fill:#000000;fill-opacity:1;">Generic Competency 7 </tspan></text>
-    <circle
-       style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#e9e9e9;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
-       id="path7854-7-0-3"
-       cx="-129.04099"
-       cy="759.18414"
-       r="47.497292"
-       transform="scale(-1,1)" />
+         y="732.16589"></tspan></text>
     <path
-       style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#b2b2b2;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
-       id="path7854-0-2-9-8"
-       sodipodi:type="arc"
-       sodipodi:cx="-129.04099"
-       sodipodi:cy="759.18414"
-       sodipodi:rx="47.497292"
-       sodipodi:ry="47.497292"
-       sodipodi:start="4.712389"
-       sodipodi:end="2.268928"
-       d="m -129.04098,711.68685 a 47.497292,47.497292 0 0 1 45.501902,33.87492 47.497292,47.497292 0 0 1 -19.401722,53.30578 47.497292,47.497292 0 0 1 -56.63085,-3.29837 l 30.53066,-36.38504 z"
-       transform="scale(-1,1)" />
-    <circle
-       style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#e2e2e2;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
-       id="path7854-4-07-7-3"
-       cx="-129.04099"
-       cy="759.18414"
-       r="35.354435"
-       transform="scale(-1,1)" />
-    <circle
-       style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#f1f1f1;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
-       id="path7854-8-6-2-5"
-       cx="-129.04099"
-       cy="759.18414"
-       r="47.497292"
-       transform="scale(-1,1)" />
-    <circle
        style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
-       id="path7854-0-3-6-1-8"
-       transform="scale(-1,1)"
-       cx="-129.04099"
-       cy="759.18414"
-       r="47.497292" />
-    <circle
-       style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
-       id="path7854-4-7-3-5-0"
-       cx="-129.04099"
-       cy="759.18414"
-       r="35.354435"
-       transform="scale(-1,1)" />
+       d="m 72.680898,843.5991 0,57.30859 c 0,6.71448 5.40466,12.11914 12.11914,12.11914 l 482.857412,0 c 6.71448,0 12.11914,-5.40466 12.11914,-12.11914 l 0,-57.30859 z"
+       id="rect10350"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="csssscc" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"
-       x="109.40827"
-       y="776.16589"
-       id="text10024-3-7-5"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="143.54814"
+       y="887.53174"
+       id="text7762-9-4-0-3-0"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
-         id="tspan10026-8-7-8"
-         x="109.40827"
-         y="776.16589"></tspan></text>
+         id="tspan7764-8-4-2-5-9"
+         x="143.54814"
+         y="887.53174"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:17.5px;font-family:'League Spartan';-inkscape-font-specification:'League Spartan Bold';fill:#ffffff;fill-opacity:1">YEAR 1</tspan></text>
+    <rect
+       style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+       id="rect10386-9"
+       width="99.320557"
+       height="36.697231"
+       x="269.73489"
+       y="861.53583"
+       rx="7.5743089"
+       ry="7.5743089" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="285.54813"
+       y="887.53174"
+       id="text7762-9-4-0-3-0-8"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan7764-8-4-2-5-9-0"
+         x="285.54813"
+         y="887.53174"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:17.5px;font-family:'League Spartan';-inkscape-font-specification:'League Spartan Bold';fill:#000000;fill-opacity:1">YEAR 2</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="427.54813"
+       y="887.53174"
+       id="text7762-9-4-0-3-0-8-7"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan7764-8-4-2-5-9-0-3"
+         x="427.54813"
+         y="887.53174"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:17.5px;font-family:'League Spartan';-inkscape-font-specification:'League Spartan Bold';fill:#ffffff;fill-opacity:1">YEAR 3</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="213.87476"
+       y="121.70925"
+       id="text7762-9-4"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan7764-8-4"
+         x="213.87476"
+         y="121.70925"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:17.5px;font-family:'League Spartan';-inkscape-font-specification:'League Spartan Bold';fill:#000000;fill-opacity:1">SEARCH FOR COMPETENCIES</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:17.91651154px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="190.65274"
+       y="121.12075"
+       id="text10574"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan10576"
+         x="190.65274"
+         y="121.12075"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:FontAwesome;-inkscape-font-specification:FontAwesome;fill:#000000;fill-opacity:1"></tspan></text>
   </g>
 </svg>

@@ -10,7 +10,6 @@ deployment:
   gitbooks:
     branch: master
     commands:
-      - 'echo "__Version__: .$CIRCLE_BUILD_NUM __Generated__: $(date)" | tee {spec,reqs}/meta.md'
+      - 'echo $CIRCLE_BUILD_NUM > spec/_version'
       - cd spec && npm install && npm run deploy
-      - cd reqs && npm install && npm run deploy
 

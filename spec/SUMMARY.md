@@ -13,7 +13,7 @@
   * [Mentor](flows/mentor.md)
   * [Tutor](flows/tutor.md)
   * [Administrator](flows/admin.md)
-* [Screens](screens/README.md)
+* Screens
   * [Student Dashboard](screens/student-dashboard.md)
   * [Mentor Review](screens/mentor-dashboard.md)
   * [Mentor Student List](screens/mentor-students.md)

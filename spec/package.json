@@ -6,13 +6,15 @@
   "dependencies": {},
   "devDependencies": {
     "gitbook-cli": "^2.3.0",
-    "surge": "^0.18.0"
+    "surge": "^0.18.0",
+    "svgexport": "^0.3.2"
   },
   "scripts": {
     "build": "gitbook build",
     "serve": "gitbook serve",
     "publish": "surge -d orcaspec.surge.sh _book",
-    "deploy": "npm run build && npm run publish"
+    "deploy": "npm run build && npm run publish",
+    "pdf": "gitbook pdf ./ ./functional-spec.pdf"
   },
   "keywords": [],
   "author": "Astral Dynamics"

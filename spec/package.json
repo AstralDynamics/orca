@@ -13,9 +13,12 @@
     "build": "gitbook build",
     "serve": "gitbook serve",
     "publish": "surge -d orcaspec.surge.sh _book",
+    "prepdf": "mkdir -p _book",
     "pdf": "gitbook pdf ./ ./functional-spec.pdf",
-    "prepublish": "npm run pdf && mv functional-spec.pdf _book/",
-    "deploy": "npm run build && npm run publish"
+    "postpdf": "mv ./functional-spec.pdf _book",
+    "deploy": "npm run build && npm run pdf && npm run publish",
+    "deploy-pdf": "npm run pdf && npm run publish",
+    "deploy-html": "npm run build && npm run publish"
   },
   "keywords": [],
   "author": "Astral Dynamics"

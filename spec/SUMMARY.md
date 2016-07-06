@@ -25,7 +25,11 @@
   * [Mentor](models/mentor.md)
   * [Tutor](models/tutor.md)
   * [Admin](models/admin.md)
-* Project Plan
-  * [Deliverables](plan/deliverables.md)
-  * [Development](plan/development.md)
+* [Deliverables](deliverables/README.md)
+  * [Design & Branding](deliverables/design.md)
+  * [Prototype](deliverables/prototype.md)
+  * [Iteration](deliverables/iteration.md)
+  * [Technical Specification](deliverables/techspec.md)
+* [Development](development.md)
+* [Summary](summary/README.md)
 

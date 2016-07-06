@@ -2,6 +2,11 @@ machine:
   node:
     version: 5.0.0
 
+dependencies:
+  pre:
+    - sudo apt-get update
+    - sudo apt-get install calibre
+
 test:
   override:
     - echo "test"

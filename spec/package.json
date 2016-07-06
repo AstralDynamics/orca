@@ -13,8 +13,8 @@
     "build": "gitbook build",
     "serve": "gitbook serve",
     "publish": "surge -d orcaspec.surge.sh _book",
-    "deploy": "npm run build && npm run publish",
-    "pdf": "gitbook pdf ./ ./functional-spec.pdf"
+    "postpublish": "gitbook pdf ./ _book/functional-spec.pdf",
+    "deploy": "npm run build && npm run publish"
   },
   "keywords": [],
   "author": "Astral Dynamics"

@@ -1,4 +1,6 @@
-## Deliverables
+# Deliverables
+
+Before development on the final platform can be started, the following pre-requisite deliverables must be completed.
 
 | Component | Description |
 | --------- | ----------- |
@@ -6,6 +8,6 @@
 | Prototype | The Supplier will use the branding and graphic designs to put together a prototype that will demonstrate the functionality to the client. |
 | Iterated Designs & Specs | The Supplier will work with the client to revise the designs and specifications to account for feedback based on the prototype. |
 | Technical Specification | The Supplier will author a technical specification which will unambiguously document the technical requirements, constraints, decisions and plans for the project. |
-| Platform | The Supplier will build the platform to the technical specification and deliver the codebase to the client. |
 
+Once the prerequisites have been delivered, the client and the Supplier will have the necessary guarantees in place to start development on the final platform.
 

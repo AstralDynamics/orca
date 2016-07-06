@@ -13,7 +13,8 @@
     "build": "gitbook build",
     "serve": "gitbook serve",
     "publish": "surge -d orcaspec.surge.sh _book",
-    "prepublish": "gitbook pdf ./ ./_book/functional-spec.pdf",
+    "pdf": "gitbook pdf ./ ./functional-spec.pdf",
+    "prepublish": "npm run pdf && mv functional-spec _book/",
     "deploy": "npm run build && npm run publish"
   },
   "keywords": [],

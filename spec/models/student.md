@@ -9,9 +9,6 @@ A student account represents an individual training to be an adult nurse in a pr
 | Year | The student's current academic year |
 | Avatar | A unique randomly generated avatar |
 
-## Guidelines
-* -
-
 ## Examples
 
 | Name | Email | Year | Avatar |

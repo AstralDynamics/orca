@@ -8,9 +8,6 @@ A mentor account represents a professional working in the department to manage t
 | Email | The admin's Bangor University email address |
 | Avatar | An admin specific unique randomly generated avatar |
 
-## Guidelines
-* -
-
 ## Examples
 
 | Name | Email | Avatar |

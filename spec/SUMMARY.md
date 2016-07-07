@@ -31,5 +31,4 @@
   * [Iteration](deliverables/iteration.md)
   * [Technical Specification](deliverables/techspec.md)
 * [Development](development.md)
-* [Summary](summary/README.md)
 

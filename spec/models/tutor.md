@@ -8,9 +8,6 @@ A tutor account represents an academic working with a students within the depart
 | Email | The tutor's Bangor University email address |
 | Avatar | A tutor specific unique randomly generated avatar |
 
-## Guidelines
-* -
-
 ## Examples
 
 | Name | Email | Avatar |

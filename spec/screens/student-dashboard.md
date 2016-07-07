@@ -2,7 +2,7 @@
 
 The student dashboard is the home screen that the student will return to in order to check the state of their achievements across the various competencies.
 
-<img src="wireframes/student.svg" height="500px" />
+<img src="wireframes/student.svg" height="500px" style="border: solid 3px #000"/>
 
 Above is a wireframe which describes the required elements for the student's home screen or _dashboard_.
 

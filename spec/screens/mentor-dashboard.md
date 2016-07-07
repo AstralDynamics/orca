@@ -2,7 +2,7 @@
 
 The mentor review screen is the home screen that mentors will return to in order to see which students have marked competencies for mentor review.
 
-<img src="wireframes/review.svg" height="500px" />
+<img src="wireframes/review.svg" height="500px" style="border: solid 3px #000"/>
 
 Above is a wireframe which describes the required elements for the mentor's home screen.
 

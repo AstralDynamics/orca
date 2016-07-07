@@ -2,7 +2,7 @@
 
 The mentor review screen is the secondary screen that mentors will return to in order to see a complete list of students.
 
-<img src="wireframes/students.svg" height="500px" />
+<img src="wireframes/students.svg" height="500px" style="border: solid 3px #000"/>
 
 Above is a wireframe which describes the required elements for the mentor's student screen.
 

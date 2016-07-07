@@ -2,7 +2,7 @@
 
 The tutor home screen is the home screen that mentors will return to in order to see which students have marked competencies for mentor review.
 
-<img src="wireframes/tutor.svg" height="500px" />
+<img src="wireframes/tutor.svg" height="500px" style="border: solid 3px #000"/>
 
 Above is the wireframe which describes the required elements for the tutor's home screen or _dashboard_.
 

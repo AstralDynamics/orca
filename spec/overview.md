@@ -1,8 +1,8 @@
 # Overview
 
-The Supplier will work with the department to redevelop the ORAPC as a digital platform that can be used by students to record and manage their competencies and by mentors and tutors to manage and track student progress.
+The Supplier will work with the School of Healthcare Sciences to redevelop the Ongoing Record of Achievement as a digital platform that can be used by students to record and manage their competencies and by mentors and tutors to manage and track student progress.
 
-Rather than taking a large stack of paper forms for their placements, competencies will be represented digitally for students to access over their smartphones, tablet or laptop. At a glance they will be able to see the competencies they are required to demonstrate over their three years and each one will expand to detail the specific levels of demonstration along with competency learning outcomes and overviews.
+Rather than taking a large stack of paper forms for their placements, competencies will be represented digitally for students to access over their smartphones, tablet or laptop. At a glance they will be able to see the competencies they are required to demonstrate over each of their three years and each one will expand to detail the specific levels of demonstration along with competency learning outcomes and overviews.
 
 Mentors will also be able to use a smartphone, tablet or laptop to see a the progress for a list of students. Once a student has decided that they have achieved a learning outcome the mentor will be notified, so that they can validate and potentially certify it.
 

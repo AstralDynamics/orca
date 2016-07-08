@@ -14,5 +14,5 @@ This scenario is designed to help understand a typical workflow for a student us
 
 * This time, the learning outcome is certified and it switches to the "certified" state.
 
-* At the end of each week the student meets with their mentors and tutor for a touch point meeting. All parties can use the platform to review the student's progress.
+* 3 times during the placement the student meets with their mentors and tutor for a touch point meeting. All parties can use the platform to review the student's progress.
 

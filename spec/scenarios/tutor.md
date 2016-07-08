@@ -4,8 +4,8 @@ This scenario is designed to help understand a typical workflow for a [tutor](no
 
 1. The tutor decides to review the progress of their students, so they use the platform to see the state of all student achievements, along with which levels they achieved and which mentor they were certified by.
 
-* The tutor uses the platform to see all students progress for a specific year and program.
+* The tutor uses the platform to see all students progress for a specific year and programme.
 
-* At the end of each week the tutor meets with their student and mentor for a touch point meeting. All parties can use the platform to review the student's progress.
+* At regular intervals the tutor meets with student for a touch point meeting. Both parties can use the platform to review the student's progress.
 
 

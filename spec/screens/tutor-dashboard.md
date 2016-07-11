@@ -1,6 +1,6 @@
 # Tutor Dashboard
 
-The tutor home screen is the home screen that mentors will return to in order to see which students have marked competencies for mentor review.
+The tutor home screen is the home screen that tutors use to search for their students and understand what their current progress is towards their practice competancies. 
 
 <img src="wireframes/tutor.svg" height="500px" style="border: solid 3px #000"/>
 

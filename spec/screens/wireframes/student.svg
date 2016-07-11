@@ -26,8 +26,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.5"
-     inkscape:cx="186.07614"
-     inkscape:cy="337.84407"
+     inkscape:cx="721.50291"
+     inkscape:cy="423.39471"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -198,20 +198,7 @@
            height="357.85715"
            x="0"
            y="86.647919" /></flowRegion><flowPara
-         id="flowPara8041" /></flowRoot>    <flowRoot
-       xml:space="preserve"
-       id="flowRoot9750"
-       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       transform="translate(-16,-120)"><flowRegion
-         id="flowRegion9752"><rect
-           id="rect9754"
-           width="462.85712"
-           height="103.5714"
-           x="112.14286"
-           y="484.50507"
-           style="fill:#000000;fill-opacity:1" /></flowRegion><flowPara
-         id="flowPara9756"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:20px;font-family:'League Spartan';-inkscape-font-specification:'League Spartan Bold';fill:#000000;fill-opacity:1">Recognises the need to promote self-care where appropriate.</flowPara></flowRoot>    <text
+         id="flowPara8041" /></flowRoot>    <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        x="203.04066"
@@ -554,5 +541,29 @@
          x="190.65274"
          y="121.12075"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:FontAwesome;-inkscape-font-specification:FontAwesome;fill:#000000;fill-opacity:1"></tspan></text>
-  </g>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="115.15737"
+       y="416.57224"
+       id="text4221"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4223"
+         x="115.15737"
+         y="416.57224" /></text>
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot9750"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       transform="translate(-16,-120)"><flowRegion
+         id="flowRegion9752"><rect
+           id="rect9754"
+           width="462.85712"
+           height="103.5714"
+           x="112.14286"
+           y="484.50507"
+           style="fill:#000000;fill-opacity:1" /></flowRegion><flowPara
+         id="flowPara9756"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:20px;font-family:'League Spartan';-inkscape-font-specification:'League Spartan Bold';fill:#000000;fill-opacity:1">Learning Outcome 1: Recognises the need to promote self-care where appropriate.</flowPara></flowRoot>  </g>
 </svg>

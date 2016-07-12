@@ -12,7 +12,7 @@ An competency has a title, a description and a list of learning outcomes that mu
 | Learning Outcomes | A list of leveled learning outcomes |
 
 ## Guidelines
-* The title field identifies the competency and is provided by the NMC.
+* The title field identifies the competency and is provided by the NMC documentation.
 * The description is a single paragraph that expands on the title to provide a clear description of the purpose of the competency.
 * The year is a number, 1-3. 
 * The domain associated with the competency is one of 4 domains determined by the NMC

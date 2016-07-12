@@ -8,8 +8,6 @@ A mentor account represents an professional working on-site at a placement pract
 | Email | The mentors contact email address |
 | Avatar | A mentor specific unique randomly generated avatar |
 
-## Guidelines
-* -
 
 ## Examples
 

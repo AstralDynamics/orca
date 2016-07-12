@@ -1,6 +1,6 @@
-# Branding & Design
+# User Interface Design
 
-The Supplier will work with the client and a graphic designer to identify a name and brand for the platform. The client will have continuous input into a short cycle of designs, previews and iterations.
+The Supplier will work with the client and a graphic designer to identify a name and brand for the platform. The client will have input into a short cycle of designs, previews and iterations until design has been reached.
 
 Once the client has identified an appropriate "look & feel", the Supplier will work with the designer to translate the existing wireframes into responsive vector graphic designs that show how the platform will look.
 

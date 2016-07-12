@@ -12,7 +12,7 @@ A student account represents an individual training to be an adult nurse in a pr
 
 ## Guidelines
 
-*The assessment number is a 9 digit alphanumberic code created by the school. It identifies a student, year of intake and the campus where they are based.
+* The assessment number is a 9 digit alphanumberic code created by the school. It identifies a student, year of intake and the campus where they are based.
 
 
 ## Examples

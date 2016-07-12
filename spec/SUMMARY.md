@@ -26,7 +26,7 @@
   * [Tutor](models/tutor.md)
 # * [Admin](models/admin.md)
 * [Deliverables](deliverables/README.md)
-  * [Design & Branding](deliverables/design.md)
+  * [User Interface Designs](deliverables/design.md)
   * [Prototype](deliverables/prototype.md)
   * [Iteration](deliverables/iteration.md)
   * [Technical Specification](deliverables/techspec.md)

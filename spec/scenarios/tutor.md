@@ -1,6 +1,6 @@
 ## Scenario 3: Tutor
 
-This scenario is designed to help understand a typical workflow for a [tutor](notes/tutor.md) using the platform.
+This scenario is designed to help understand a typical workflow for a tutor using the platform.
 
 1. The tutor decides to review the progress of their students, so they use the platform to see the state of all student achievements, along with which levels they achieved and which mentor they were certified by.
 

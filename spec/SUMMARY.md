@@ -20,7 +20,7 @@
   * [Tutor Dashboard](screens/tutor-dashboard.md)
 # * [Admin Dashboard](screens/admin-dashboard.md)
 * [Models](models/README.md)
-  * [Achievement](models/achievement.md)
+  * [Competencies](models/competency.md)
   * [Student](models/student.md)
   * [Mentor](models/mentor.md)
   * [Tutor](models/tutor.md)

@@ -18,7 +18,7 @@ A student account represents an individual training to be an adult nurse in a pr
 ## Examples
 
 | Name | Email | Year | Assessment Number | Avatar |
-| ---- | ----- | ---- | ------ |
-| Sam Stevenson | eeue40@bangor.ac.uk | 15BNW1032 | TBC |
+| ---- | ----- | ---- | -------- | --- |
+| Sam Stevenson | eeue40@bangor.ac.uk | 2 | 15BNW1032 | TBC |
 | Simon Salford| msu30f@bangor.ac.uk | 1 | 16BNB0049 | TBC |
 

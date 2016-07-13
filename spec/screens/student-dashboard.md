@@ -7,9 +7,9 @@ The student dashboard is the home screen that the student will return to in orde
 Above is a wireframe which describes the required elements for the student's home screen or _dashboard_.
 
 ## Competency List
-The primary focus is the list of competencies that occupy the main part of the screen. Each one is composed of three main components.
+The primary focus is the list of competencies that occupy the main part of the screen. Each one is composed of four main components.
 
-### Compentecy Title
+### Competency Title
 Each competency has a clear title, which the student can search against.
 
 ### Learning Outcome Title
@@ -19,7 +19,7 @@ Each competency has one or more Learning Outcomes associated with it, each of wh
 A progress indicator for each competency shows the overall state of progress made by the student towards achieving the competency, factoring in how many of the individual Learning Outcomes have been achieved.
 
 ### Expanded Overview
-A competency can be expanded to show the descripion text as well as the individual learning outcomes, their descriptions and an interface which shows the current state of each of the required demostration levels for the Learning Outcome.
+A competency can be expanded to show the description text as well as the individual learning outcomes, their descriptions and an interface which shows the current state of each of the required demonstration levels for the Learning Outcome.
 
 A student user can tap or click on one of these levels to mark it for mentor review. The interface will make it clear which levels have been so marked and allow the user to cancel if they accidentally mark the incorrect Learning Outcome level. When a mentor marks it as complete it will change again.
 

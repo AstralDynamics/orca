@@ -16,10 +16,10 @@ This deliverable is made up of the following sub-components.
 The prototype will have the following limitations.
 
 ### Manual Model Management
-For the prototype, the client will not be able to create new users, competencies or learning outcomes independently. These feature are needed for long term development of the platform and will be comissioned in phase 1. During Phase 1 the supplier will be responsible to for configuring the platform with data such that it can be fully tested by the client.
+For the prototype, the client will not be able to create new users, competencies or learning outcomes independently. These feature are needed for long term development of the platform and will be commissioned in phase 1. During Phase 1 the supplier will be responsible to for configuring the platform with data such that it can be fully tested by the client.
 
 ### Authentication
-The prototype will not feature a complete authentication system with password management features. Each user of the system during testing will be provided with a unique weblink which will allow them to access the system.  
+The prototype will not feature a complete authentication system with password management features. Each user of the system during testing will be provided with a unique URL which will allow them to access the system.  
 
 ### Responsive Design
 The prototype will not be designed to work at multiple resolutions. However, it will be designed to work on mobile devices, and will be able to be viewed on larger screens too.

@@ -24,7 +24,7 @@ An competency has a title, a description and a list of learning outcomes that mu
 | Title | Description | Year | Domain | Learning Outcomes |
 | ----- | ------------- | --- | ----------- | ----------- |
 | Generic Competency 4 | Recognises the need to promote self-care where appropriate. | 1 | Communication and interpersonal skills | Learning Outcome 1 | 
-| Generic Competency 1 | All nurses must use theraputic principles to engage, maintain and where appropriate disengage from professional caring relationships | 3 | Professional values | Learning Outcome 1, Learning Outcome 2 |
+| Generic Competency 1 | All nurses must use therapeutic principles to engage, maintain and where appropriate disengage from professional caring relationships | 3 | Professional values | Learning Outcome 1, Learning Outcome 2 |
 
 
 

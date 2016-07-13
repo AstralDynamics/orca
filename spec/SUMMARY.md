@@ -31,4 +31,4 @@
   * [Iteration](deliverables/iteration.md)
   * [Technical Specification](deliverables/techspec.md)
 * [Development](development.md)
-* [IP](ip.md)
+* [Intellectual Property](ip.md)

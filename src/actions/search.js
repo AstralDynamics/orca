@@ -1,6 +1,6 @@
 import { SEARCH } from '../constants/search';
 
-export function search(query) {
+export function searchFor(query) {
   return { type: SEARCH, query };
 }
 

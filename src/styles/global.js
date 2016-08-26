@@ -1,9 +1,10 @@
 import { StyleSheet } from 'aphrodite'
-import { fontFamily } from '../constants/styles'
+import { fontFamily, colors } from '../constants/styles'
 
 export default StyleSheet.create({
   sansFont: {
-    fontFamily: fontFamily
+    fontFamily: fontFamily,
+    color: colors.black
   },
   page: {
     maxWidth: 800,

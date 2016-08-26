@@ -1,11 +1,21 @@
 import React from 'react'
-import logo from '../images/logo.svg'
+import Selector from '../components/selector'
+import Tray from './tray'
+import TopBar from './topbar';
 
-export default function MentorDashboard() {
+function MentorDashboard() {
   return (
     <div>
-      <h1>Mentor</h1>
-      <img src={logo} alt='Logo' />
+      <Tray position="top">
+        <TopBar />
+      </Tray>
+
+      <Tray position='bottom'>
+        <Selector options={['Review', 'Students' ]} />
+      </Tray>
     </div>
   )
 }
+
+export default MentorDashboard
+

@@ -1,16 +1,24 @@
 import React from 'react'
-import logo from '../images/logo.svg'
-import Logout from '../containers/logout'
-import Selector from '../components/selector'
+import Selector from './selector'
+import Search from './search'
+import Tray from './tray'
+import TopBar from './topbar';
 
-export default function StudentDashboard() {
+function StudentDashboard() {
   return (
     <div>
-      <Logout />
-      <h1>Student</h1>
-      <img src={logo} alt='Logo' />
-      <Selector options={['Year 1', 'Year 2', 'Year 3']} />
+      <Tray position="top">
+        <TopBar>
+          <Search placeholder='Search for Competencies' />
+        </TopBar>
+      </Tray>
+
+      <Tray position='bottom'>
+        <Selector options={['Year 1', 'Year 2', 'Year 3']} />
+      </Tray>
     </div>
   )
 }
+
+export default StudentDashboard
 

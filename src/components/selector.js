@@ -4,10 +4,6 @@ import { colors, shades } from '../constants/styles'
 
 const styles = StyleSheet.create({
   selector: {
-    position: 'fixed',
-    left: 0,
-    bottom: 0,
-    width: '100%',
     padding: '.5em',
     fontSize: '1.25em',
     background: colors.blue,
@@ -18,7 +14,12 @@ const styles = StyleSheet.create({
     padding: '.2em .5em',
     borderRadius: '.15em',
     cursor: 'pointer',
+    color: colors.white,
+    outline: 'none',
     ':hover': {
+      background: shades.lighten
+    },
+    ':focus': {
       background: shades.lighten
     }
   },
@@ -54,6 +55,7 @@ class Selector extends React.Component {
         className={css(styles.column)}
         style={{ width: `${width}%` }}>
         <a
+          href='#'
           onClick={e => this.selectIndex(index)}
           className={css(
             styles.option,

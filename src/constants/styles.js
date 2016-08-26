@@ -19,6 +19,7 @@ export const shades = {
 }
 
 export const animations = {
-  shake: 'shake 0.82s cubic-bezier(.36,.07,.19,.97) both'
+  shake: 'shake 0.82s cubic-bezier(.36,.07,.19,.97) both',
+  spin: 'spin 10s linear infinite'
 }
 

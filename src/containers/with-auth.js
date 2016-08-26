@@ -2,11 +2,11 @@ import React from 'react'
 import { connect } from 'react-redux'
 
 export function withAuth(Component, DefaultView) {
-  function Auth({ user }) {
-    if(user) {
-      return <Component />
+  function Auth(props) {
+    if(props.user) {
+      return <Component {...props} />
     } else {
-      return <DefaultView />
+      return <DefaultView {...props} />
     }
   }
 

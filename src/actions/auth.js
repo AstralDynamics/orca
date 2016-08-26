@@ -13,12 +13,11 @@ export function login(username, password) {
 }
 
 export function autologin() {
-  return (dispatch) => {
+  return (dispatch) =>
     db.getSession()
       .then(session => loginSuccess(session.userCtx))
       .catch(err => logout())
       .then(dispatch)
-  }
 }
 
 export function loginSuccess(user) {

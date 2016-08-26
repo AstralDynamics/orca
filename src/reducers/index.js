@@ -1,12 +1,6 @@
-import { combineReducers } from 'redux';
-
-import competencies from './competencies';
-import search from './search';
-import year from './year';
+import { combineReducers } from 'redux'
+import auth from './auth'
 
 export default combineReducers({
-  competencies,
-  search,
-  year
-});
-
+  auth
+})

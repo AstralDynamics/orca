@@ -1,5 +1,5 @@
 import React from 'react'
-import { css, StyleSheet } from 'aphrodite'
+import { css } from 'aphrodite'
 import { textInput } from '../styles/input'
 import { button } from '../styles/button'
 import { form } from '../styles/form'

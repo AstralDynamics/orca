@@ -13,6 +13,11 @@ export const colors = {
   error: '#c12727'
 }
 
+export const shades = {
+  lighten: 'rgba(255, 255, 255, .1)',
+  darken: 'rgba(0, 0, 0, .1)'
+}
+
 export const animations = {
   shake: 'shake 0.82s cubic-bezier(.36,.07,.19,.97) both'
 }

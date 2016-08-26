@@ -19,6 +19,7 @@
     "aphrodite": "^0.5.0",
     "pouchdb": "^5.4.5",
     "pouchdb-authentication": "^0.5.3",
+    "prng": "0.0.1",
     "react": "^15.2.1",
     "react-dom": "^15.2.1",
     "react-redux": "^4.4.5",

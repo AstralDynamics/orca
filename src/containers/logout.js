@@ -3,7 +3,7 @@ import { connect } from 'react-redux'
 import { logout } from '../actions/auth'
 import { colors } from '../constants/styles'
 
-import ExitIcon from 'react-icons/lib/md/exit-to-app'
+import ExitIcon from 'react-icons/lib/md/power-settings-new'
 
 function Logout({ logout }) {
   return (

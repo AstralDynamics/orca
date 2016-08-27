@@ -1,5 +1,3 @@
-export default authReducer
-
 import { LOGIN_SUCCESS, LOGIN_FAILED, LOGOUT } from '../constants/auth'
 
 function authReducer(auth={}, action) {
@@ -15,3 +13,4 @@ function authReducer(auth={}, action) {
   }
 }
 
+export default authReducer

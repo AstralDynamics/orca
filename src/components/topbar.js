@@ -8,8 +8,8 @@ const styles = StyleSheet.create({
     background: colors.white,
     textAlign: 'center',
     fontSize: '1.5em',
-    height: '2em',
-    lineHeight: '2em',
+    height: '3rem',
+    lineHeight: '3rem',
     paddingRight: '2em',
     position: 'relative'
   },

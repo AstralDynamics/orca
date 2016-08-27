@@ -23,3 +23,9 @@ export const animations = {
   spin: 'spin 10s linear infinite'
 }
 
+export const gaps = {
+  small: '.4rem',
+  medium: '.6rem',
+  big: '1.6rem'
+}
+

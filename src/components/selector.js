@@ -4,14 +4,19 @@ import { colors, shades } from '../constants/styles'
 
 const styles = StyleSheet.create({
   selector: {
-    padding: '.5em',
-    fontSize: '1.25em',
+    height: '3rem',
+    lineHeight: '3rem',
+    padding: '0 .5em',
+    fontSize: '1.5em',
     background: colors.blue,
     color: colors.white,
     boxSizing: 'border-box'
   },
   option: {
-    padding: '.2em .5em',
+    position: 'relative',
+    top: -1,
+    padding: '.25em .75em',
+    fontSize: '1.25rem',
     borderRadius: '.15em',
     cursor: 'pointer',
     color: colors.white,

@@ -7,8 +7,6 @@ export default StyleSheet.create({
     color: colors.black
   },
   page: {
-    maxWidth: 800,
-    margin: '0 auto',
     minHeight: '100%'
   }
 })

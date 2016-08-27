@@ -3,6 +3,7 @@ import Selector from './selector'
 import Search from './search'
 import Tray from './tray'
 import TopBar from './topbar';
+import Dashboard from './dashboard';
 import StudentCompetencyList from '../containers/student-competency-list'
 
 import { css, StyleSheet } from 'aphrodite'
@@ -10,8 +11,7 @@ import { gaps } from '../constants/styles'
 
 const styles = StyleSheet.create({
   main: {
-    marginTop: '3rem',
-    padding: gaps.medium
+    padding: `.1px ${gaps.medium}`
   }
 })
 
@@ -21,24 +21,30 @@ class StudentDashboard extends React.Component {
     this.state = { year: 1 }
 
     this.setYear = this.setYear.bind(this)
+    this.setQuery = this.setQuery.bind(this)
   }
   setYear(index) {
     this.setState({ year: index + 1 })
   }
+  setQuery(query) {
+    this.setState({ query })
+  }
   render() {
-    const { year } = this.state
+    const { year, query } = this.state
 
     return (
       <div>
-        <Tray position="top">
-          <TopBar>
-            <Search placeholder='Search for Competencies' />
-          </TopBar>
-        </Tray>
+        <TopBar>
+          <Search
+            placeholder='Search for Competencies'
+            onSearch={this.setQuery} />
+        </TopBar>
 
-        <main className={css(styles.main)}>
-          <StudentCompetencyList year={year} />
-        </main>
+        <Dashboard>
+          <main className={css(styles.main)}>
+            <StudentCompetencyList year={year} query={query} />
+          </main>
+        </Dashboard>
 
         <Tray position='bottom'>
           <Selector

@@ -2,32 +2,41 @@ import React from 'react'
 import { connect } from 'react-redux'
 
 import StudentCompetencyList from '../components/student-competency-list'
-import { loadCompetencies } from '../actions/student'
+import { loadCompetencies } from '../actions/competency'
+import { loadStudent, saveStudent } from '../actions/students'
 
 function StudentCompetenciesContainer(props) {
-  const { competencies, loadCompetencies } = props
+  const { competencies, student, id  } = props
+  const { loadCompetencies, loadStudent, saveStudent } = props
 
-  if(!competencies) {
-    console.log('Need to fetch')
-    loadCompetencies()
+  if(!competencies || !student) {
+    if(!competencies) loadCompetencies()
+    if(!student) loadStudent(id)
+
     return null
-  } else {
-    return (
-      <StudentCompetencyList
-        {...props}
-        competencies={competencies} />
-    )
   }
+
+  return (
+    <StudentCompetencyList
+      {...props}
+      student={student}
+      competencies={competencies}
+      saveStudent={saveStudent} />
+  )
 }
 
 function mapState(state) {
   return {
-    competencies: state.student.competencies
+    competencies: state.competency.competencies,
+    student: state.students.currentStudent,
+    id: state.auth.user.name
   }
 }
 
 const mapDispatch = {
-  loadCompetencies
+  loadCompetencies,
+  loadStudent,
+  saveStudent
 }
 
 export default connect(mapState, mapDispatch)(StudentCompetenciesContainer)

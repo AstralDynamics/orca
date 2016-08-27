@@ -21,7 +21,9 @@ class Search extends React.Component {
     this.setQuery = this.setQuery.bind(this)
   }
   setQuery(event) {
-    this.setState({ query: event.target.value })
+    const query = event.target.value
+    this.setState({ query })
+    this.props.onSearch(query)
   }
   render() {
     const { placeholder } = this.props
@@ -39,7 +41,10 @@ class Search extends React.Component {
 }
 
 Search.defaultProps = {
-  placeholder: 'Search'
+  placeholder: 'Search',
+  onSearch() {
+    console.warn('No `onSearch` provided for <Search />')
+  }
 }
 
 export default Search

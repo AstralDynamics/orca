@@ -7,7 +7,7 @@ export const cardHeight = '5rem'
 
 const styles = StyleSheet.create({
   card: {
-    marginBottom: gaps.medium,
+    marginTop: gaps.medium,
     height: cardHeight,
     lineHeight: cardHeight,
     background: colors.white,

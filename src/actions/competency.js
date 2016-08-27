@@ -1,5 +1,5 @@
 import { createDB } from '../util/db'
-import { COMPETENCIES_LOADED, COMPETENCIES_LOADING_ERROR } from '../constants/student'
+import { COMPETENCIES_LOADED, COMPETENCIES_LOADING_ERROR } from '../constants/competency'
 
 const db = createDB('competencies')
 
@@ -12,23 +12,17 @@ export function loadCompetencies() {
   }
 }
 
-export function saveCompetency(competency) {
-  return (dispatch) => {
-    db.put(competency)
-  }
-}
-
-export function competenciesLoaded(comps) {
+export function competenciesLoaded(competencies) {
   return {
     type: COMPETENCIES_LOADED,
-    competencies: comps
+    competencies
   }
 }
 
-export function competenciesLoadingError(err) {
+export function competenciesLoadingError(error) {
   return {
     type: COMPETENCIES_LOADING_ERROR,
-    error: err
+    error
   }
 }
 

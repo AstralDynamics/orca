@@ -1,0 +1,49 @@
+import React from 'react'
+import Card from './card';
+import { css, StyleSheet } from 'aphrodite'
+import { colors, gaps } from '../constants/styles'
+
+const styles = StyleSheet.create({
+  trigger: {
+    cursor: 'pointer'
+  },
+  expander: {
+    background: colors.paleGrey,
+    padding: gaps.medium
+  }
+})
+
+class ExpandableCard extends React.Component {
+  constructor() {
+    super()
+    this.state = { expanded: true }
+    this.toggle = this.toggle.bind(this)
+  }
+  toggle() {
+    this.setState({ expanded: !this.state.expanded })
+  }
+  render() {
+    let { children } = this.props
+    children = children instanceof Array ? children : [children]
+    const [card, ...extra] = children
+    const { expanded } = this.state
+
+    return (
+      <div>
+        <div onClick={this.toggle} className={css(styles.trigger)}>
+          <Card>
+            {card}
+          </Card>
+        </div>
+        {expanded && (
+          <div className={css(styles.expander)}>
+            {extra}
+          </div>
+        )}
+      </div>
+    )
+  }
+}
+
+export default ExpandableCard
+

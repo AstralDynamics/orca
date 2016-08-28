@@ -2,12 +2,10 @@ import React from 'react'
 import { connect } from 'react-redux'
 
 import StudentCompetencyList from '../components/student-competency-list'
-import { loadCompetencies } from '../actions/competency'
-import { loadStudent, saveStudent } from '../actions/students'
 
 function StudentCompetenciesContainer(props) {
   const { competencies, student, id  } = props
-  const { loadCompetencies, loadStudent, saveStudent } = props
+  const { loadCompetencies, loadStudent, saveStudent, notify } = props
 
   if(!competencies || !student) {
     if(!competencies) loadCompetencies()
@@ -20,6 +18,7 @@ function StudentCompetenciesContainer(props) {
     <StudentCompetencyList
       {...props}
       student={student}
+      notify={notify}
       competencies={competencies}
       saveStudent={saveStudent}
       loadStudent={loadStudent} />
@@ -34,10 +33,15 @@ function mapState(state) {
   }
 }
 
+import { loadCompetencies } from '../actions/competency'
+import { loadStudent, saveStudent } from '../actions/students'
+import { notify } from '../actions/notify'
+
 const mapDispatch = {
   loadCompetencies,
   loadStudent,
-  saveStudent
+  saveStudent,
+  notify
 }
 
 export default connect(mapState, mapDispatch)(StudentCompetenciesContainer)

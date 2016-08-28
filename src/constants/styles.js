@@ -16,7 +16,9 @@ export const colors = {
 
 export const shades = {
   lighten: 'rgba(255, 255, 255, .1)',
-  darken: 'rgba(0, 0, 0, .1)'
+  darken: 'rgba(0, 0, 0, .1)',
+  whiteout: 'rgba(255, 255, 255, .8)',
+  blueout: 'rgba(39, 106, 193, .8)',
 }
 
 export const animations = {

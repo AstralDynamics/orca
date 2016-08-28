@@ -10,6 +10,7 @@ import { withAuth } from './containers/with-auth'
 import { withRole } from './containers/with-role'
 import { autologin } from './actions/auth'
 import Splash from './components/splash'
+import Notifications from './containers/notifications'
 import StudentDash from './components/student-dashboard'
 import MentorDash from './components/mentor-dashboard'
 import TutorDash from './components/tutor-dashboard'
@@ -41,6 +42,7 @@ const className = css(
 render(
   <Provider store={store}>
     <div className={className}>
+      <Notifications />
       <AuthenticatedApp />
     </div>
   </Provider>,

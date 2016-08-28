@@ -11,7 +11,8 @@ function StudentCompetencyList({
   query='',
   student,
   saveStudent,
-  loadStudent
+  loadStudent,
+  notify
 }) {
 
   function editCompetency(competency, id) {
@@ -23,6 +24,7 @@ function StudentCompetencyList({
 
     saveStudent(newStudent)
       .then(res => loadStudent(student._id))
+      .then(doc => notify('Marked for mentor review!'))
       .catch(err => console.error(err))
   }
 
@@ -74,7 +76,6 @@ function Competency({ competency, studentCompetency, editCompetency }) {
     </Card>
   )
 }
-
 
 export default StudentCompetencyList
 

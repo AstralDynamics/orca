@@ -6,6 +6,7 @@ import StudentProfile from '../containers/student-profile'
 
 import { css, StyleSheet } from 'aphrodite'
 import { gaps } from '../constants/styles'
+import { searchFor } from '../util/search'
 
 const styles = StyleSheet.create({
   main: {
@@ -18,27 +19,41 @@ const styles = StyleSheet.create({
   }
 })
 
-function StudentList({ students, competencies, year=1 }) {
-  function yearFilter(student) {
-    return student.year === year
+class StudentList extends React.Component {
+  constructor() {
+    super()
+    this.state = { query: '' }
+    this.setQuery = this.setQuery.bind(this)
   }
+  setQuery(query) {
+    this.setState({ query })
+  }
+  render() {
+    const { students, competencies, year=1 } = this.props
+    const { query } =this.state
 
-  return (
-    <div>
-      <TopBar>
-        <Search
-          placeholder='Search for Students' />
-      </TopBar>
+    const filteredStudents = students
+      .filter(student => student.year === year)
+      .filter(student => searchFor(query)(student.name))
 
-      <Dashboard>
-        <main className={css(styles.main)}>
-          <Students
-            competencies={competencies}
-            students={students.filter(yearFilter)} />
-        </main>
-      </Dashboard>
-    </div>
-  )
+    return (
+      <div>
+        <TopBar>
+          <Search
+            placeholder='Search for Students'
+            onSearch={this.setQuery} />
+        </TopBar>
+
+        <Dashboard>
+          <main className={css(styles.main)}>
+            <Students
+              competencies={competencies}
+              students={filteredStudents} />
+          </main>
+        </Dashboard>
+      </div>
+    )
+  }
 }
 
 function Students({ students, competencies }) {

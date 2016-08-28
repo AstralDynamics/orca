@@ -8,7 +8,7 @@ import { colors, animations } from '../constants/styles'
 const styles = StyleSheet.create({
   splash: {
     textAlign: 'center',
-    marginTop: '3em'
+    paddingTop: '3em'
   },
   title: {
     textTransform: 'uppercase'

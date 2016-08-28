@@ -17,11 +17,12 @@ const styles = StyleSheet.create({
   }
 })
 
-function Tray({ position, children }) {
+function Tray({ position, children, absolute }) {
   return (
     <div className={css(
       styles.tray,
-      styles[position]
+      styles[position],
+      absolute && styles.absolute
     )}>
       {children}
     </div>

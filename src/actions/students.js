@@ -8,7 +8,9 @@ const db = createDB('students')
 export function loadStudents() {
   return (dispatch) => {
     db.allDocs({ include_docs: true })
-      .then(docs => studentsLoaded(docs.rows))
+      .then(res => res.rows)
+      .then(students => students.map(student => student.doc))
+      .then(docs => studentsLoaded(docs))
       .catch(studentsLoadingError)
       .then(dispatch)
   }

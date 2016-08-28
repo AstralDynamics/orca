@@ -34,6 +34,21 @@ const styles = StyleSheet.create({
   },
   active: {
     background: colors.darkBlue
+  },
+  light: {
+    background: colors.paleGrey
+  },
+  lightOption: {
+    color: colors.grey,
+    ':focus': {
+      background: shades.darken
+    },
+    ':hover': {
+      background: shades.darken
+    }
+  },
+  lightActive: {
+    background: colors.paleBlue
   }
 })
 
@@ -50,7 +65,7 @@ class Selector extends React.Component {
     this.props.onSelect(index)
   }
   renderOption(option, index) {
-    const { options } = this.props
+    const { options, light } = this.props
     const isActive = (index === this.state.index)
     const width = 100 / options.length
 
@@ -64,7 +79,9 @@ class Selector extends React.Component {
           onClick={e => this.selectIndex(index)}
           className={css(
             styles.option,
-            isActive && styles.active
+            isActive && styles.active,
+            light && styles.lightOption,
+            isActive && light && styles.lightActive
           )}>
         {option}
         </a>
@@ -72,10 +89,10 @@ class Selector extends React.Component {
     )
   }
   render() {
-    const { options } = this.props
+    const { options, light } = this.props
 
     return (
-      <div className={css(styles.selector)}>
+      <div className={css(styles.selector, light && styles.light)}>
         <nav>
           {options.map(this.renderOption, this)}
         </nav>

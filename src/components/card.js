@@ -9,18 +9,26 @@ const styles = StyleSheet.create({
   card: {
     marginTop: gaps.medium,
     height: cardHeight,
-    lineHeight: cardHeight,
     background: colors.white,
-    padding: gaps.medium,
     textAlign: 'center',
-    fontSize: '1.5em'
+    fontSize: '1.5em',
+    boxSizing: 'border-box',
+    display: 'table',
+    width: '100%'
+  },
+  wrapper: {
+    height: cardHeight,
+    display: 'table-cell',
+    verticalAlign: 'middle',
   }
 })
 
 function Card({ children }) {
   return (
     <div className={css(styles.card)}>
-      {children}
+      <div className={css(styles.wrapper)}>
+        {children}
+      </div>
     </div>
   )
 }

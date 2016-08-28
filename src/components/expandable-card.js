@@ -1,15 +1,14 @@
 import React from 'react'
 import Card from './card';
 import { css, StyleSheet } from 'aphrodite'
-import { colors, gaps } from '../constants/styles'
+import { colors } from '../constants/styles'
 
 const styles = StyleSheet.create({
   trigger: {
     cursor: 'pointer'
   },
   expander: {
-    background: colors.paleGrey,
-    padding: gaps.medium
+    background: colors.paleGrey
   }
 })
 

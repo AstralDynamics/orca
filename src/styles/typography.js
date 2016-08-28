@@ -18,6 +18,11 @@ export default StyleSheet.create({
     fontSize: '.9rem',
     color: colors.grey,
     fontWeight: 'bold'
+  },
+  email: {
+    fontSize: '.9rem',
+    color: colors.darkGrey,
+    fontWeight: 'bold'
   }
 })
 

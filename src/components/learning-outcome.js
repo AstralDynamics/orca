@@ -1,7 +1,7 @@
 import React from 'react'
 import { css, StyleSheet } from 'aphrodite'
 
-import { colors } from '../constants/styles'
+import { colors, gaps } from '../constants/styles'
 import typography from '../styles/typography'
 
 const styles = StyleSheet.create({
@@ -49,12 +49,15 @@ const styles = StyleSheet.create({
   },
   partialReview: {
     borderColor: colors.lightBlue
+  },
+  container: {
+    padding: gaps.medium
   }
 })
 
 function LearningOutcome({ outcome, studentOutcome, onMark }) {
   return (
-    <div>
+    <div className={css(styles.container)}>
       <span className={css(typography.title)}>
         {outcome.title}
       </span>

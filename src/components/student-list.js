@@ -3,6 +3,7 @@ import Search from './search'
 import TopBar from './topbar'
 import Dashboard from './dashboard'
 import StudentProfile from '../containers/student-profile'
+import { constantly } from 'zaphod'
 
 import { css, StyleSheet } from 'aphrodite'
 import { gaps } from '../constants/styles'
@@ -10,7 +11,8 @@ import { searchFor } from '../util/search'
 
 const styles = StyleSheet.create({
   main: {
-    padding: `.1px ${gaps.medium}`
+    padding: `.1px ${gaps.medium}`,
+    paddingBottom: '6.8em'
   },
   resetList: {
     listStyleType: 'none',
@@ -29,12 +31,16 @@ class StudentList extends React.Component {
     this.setState({ query })
   }
   render() {
-    const { students, competencies, year=1 } = this.props
-    const { query } =this.state
+    const { students, competencies } = this.props
+    const { filter, filterCompetencies } = this.props
+    const { query } = this.state
 
     const filteredStudents = students
-      .filter(student => student.year === year)
+      .filter(filter)
       .filter(student => searchFor(query)(student.name))
+
+    const filteredCompetencies = competencies
+      .filter(filterCompetencies)
 
     return (
       <div>
@@ -47,13 +53,18 @@ class StudentList extends React.Component {
         <Dashboard>
           <main className={css(styles.main)}>
             <Students
-              competencies={competencies}
+              competencies={filteredCompetencies}
               students={filteredStudents} />
           </main>
         </Dashboard>
       </div>
     )
   }
+}
+
+StudentList.defaultProps = {
+  filter: constantly(true),
+  filterCompetencies: constantly(true)
 }
 
 function Students({ students, competencies }) {

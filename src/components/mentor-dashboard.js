@@ -3,14 +3,17 @@ import Selector from './selector'
 import Tray from './tray'
 import ReviewQueue from './review-queue'
 import StudentList from '../containers/student-list'
+import { all } from '../util/fp'
+import { vals } from 'zaphod/compat'
 
 class MentorDashboard extends React.Component {
   constructor() {
     super()
-    this.state = { view: 'Students', year: 1 }
+    this.state = { view: 'Review', year: 1 }
     this.views = ['Review', 'Students']
     this.setView = this.setView.bind(this)
     this.setYear = this.setYear.bind(this)
+    this.filter = this.filter.bind(this)
   }
   setView(index) {
     this.setState({ view: this.views[index] })
@@ -18,13 +21,28 @@ class MentorDashboard extends React.Component {
   setYear(index) {
     this.setState({ year: index + 1 })
   }
+  filter(student) {
+    return student.year === this.state.year
+  }
   render() {
     const { view, year } = this.state
+
+    function filterOnYear(student) {
+      return student.year === year
+    }
+
+    function filterOnReview(competency) {
+      // only show competencies that have been marked
+      return true
+    }
+
     return (
       <div>
         {view === 'Review'
-          ? <ReviewQueue year={year} />
-          : <StudentList year={year} />}
+          ? <StudentList
+              filter={filterOnYear}
+              filterCompetencies={filterOnReview} />
+          : <StudentList filter={filterOnYear} />}
 
         <Tray position='bottom'>
           <Selector

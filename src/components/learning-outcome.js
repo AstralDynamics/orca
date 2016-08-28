@@ -8,7 +8,8 @@ const styles = StyleSheet.create({
   outcome: {
     borderTop: `solid .5em ${colors.lightGrey}`,
     marginTop: '1em',
-    position: 'relative'
+    position: 'relative',
+    minHeight: '3em'
   },
   stage: {
     display: 'inline-block',
@@ -35,7 +36,9 @@ const styles = StyleSheet.create({
     background: colors.lightGrey,
     margin: '0 auto',
     marginTop: '-.6em',
-    boxSizing: 'border-box'
+    boxSizing: 'border-box',
+    transitionDuration: '.5s',
+    border: `solid 0 ${colors.blue}`
   },
   review: {
     background: colors.lightBlue

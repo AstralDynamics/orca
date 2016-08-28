@@ -1,5 +1,5 @@
 import React from 'react'
-import { updateIn } from 'zaphod/compat'
+import { updateIn, setIn } from 'zaphod/compat'
 
 import ExpandableCard from './expandable-card'
 import LearningOutcome from './learning-outcome'
@@ -21,13 +21,19 @@ const styles = StyleSheet.create({
 function StudentProfile({ student, competencies, notify, saveStudent, loadStudent }) {
   console.log('rerender')
   function editStudent(competencyId, outcomeIndex, stageIndex) {
-    const newStudent = updateIn(
+    const markedProgress = updateIn(
       student,
       ['competencies', competencyId, 'outcomes', outcomeIndex, stageIndex, 'progress'],
       cycleProgress
     )
 
-    saveStudent(newStudent)
+    const markedReview = setIn(
+      markedProgress,
+      ['competencies', competencyId, 'outcomes', outcomeIndex, stageIndex, 'review'],
+      false
+    )
+
+    saveStudent(markedReview)
       .then(res => loadStudent(student._id))
       .then(doc => notify('Marked student progress'))
       .catch(err => console.error(err))

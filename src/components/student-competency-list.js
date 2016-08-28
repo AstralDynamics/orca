@@ -1,5 +1,5 @@
 import React from 'react'
-import { updateIn, setIn } from 'zaphod/compat'
+import { updateIn, setIn, getIn } from 'zaphod/compat'
 import Card from './expandable-card'
 import LearningOutcome from './learning-outcome'
 
@@ -57,6 +57,14 @@ function Competency({ competency, studentCompetency, editCompetency }) {
     editCompetency(newComp, id)
   }
 
+  function getStudentOutcome(index) {
+    return getIn(
+      studentCompetency,
+      ['outcomes', index],
+      {}
+    )
+  }
+
   return (
     <Card>
       <header>
@@ -67,7 +75,7 @@ function Competency({ competency, studentCompetency, editCompetency }) {
           <div key={index}>
             <LearningOutcome
               outcome={outcome}
-              studentOutcome={studentCompetency.outcomes[index]}
+              studentOutcome={getStudentOutcome(index)}
               onMark={stageIndex => onMark(index, stageIndex)} />
             {(index !== doc.outcomes.length - 1) && <hr />}
           </div>

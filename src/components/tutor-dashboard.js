@@ -15,9 +15,11 @@ class TutorDashboard extends React.Component {
   }
   render() {
     const { year } = this.state
+    const filterByYear = (student) => student.year === year
+
     return (
       <div>
-        <StudentList year={year} />}
+        <StudentList filter={filterByYear} />}
 
         <Tray position='bottom'>
           <Selector

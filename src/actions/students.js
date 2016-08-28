@@ -37,7 +37,6 @@ export function studentsLoaded(students) {
 }
 
 export function studentLoaded(student) {
-  console.log('load', student._rev)
   return {
     type: STUDENT_LOADED,
     student

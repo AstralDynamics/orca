@@ -13,7 +13,6 @@ function StudentCompetencyList({
   saveStudent,
   loadStudent
 }) {
-  console.log('new', student)
 
   function editCompetency(competency, id) {
     const newStudent = setIn(

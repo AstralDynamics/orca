@@ -67,6 +67,18 @@ function Marker({ progress=0, review=false }) {
   )
 }
 
+function progressHint(progress) {
+  if(progress === 0) {
+    return '(N/A)'
+  }
+  if(progress === 1) {
+    return '(Partial)'
+  }
+  if(progress === 2) {
+    return '(Complete)'
+  }
+}
+
 function Stage({ stage, studentStage={}, isFirst, isLast }) {
   const { progress, review } = studentStage
 
@@ -83,7 +95,7 @@ function Stage({ stage, studentStage={}, isFirst, isLast }) {
       </span>
       <br />
       <span className={css(typography.hint)}>
-        (Partial)
+        {progressHint(progress)}
       </span>
     </div>
   )

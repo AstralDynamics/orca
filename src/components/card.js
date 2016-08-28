@@ -14,7 +14,8 @@ const styles = StyleSheet.create({
     fontSize: '1.5em',
     boxSizing: 'border-box',
     display: 'table',
-    width: '100%'
+    width: '100%',
+    position: 'relative'
   },
   wrapper: {
     height: cardHeight,

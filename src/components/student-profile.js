@@ -2,6 +2,8 @@ import React from 'react'
 import { updateIn, setIn } from 'zaphod/compat'
 
 import ExpandableCard from './expandable-card'
+import { cardHeight } from './card'
+import Avatar from './avatar'
 import LearningOutcome from './learning-outcome'
 import { cycleProgress } from '../util/progress'
 
@@ -19,7 +21,6 @@ const styles = StyleSheet.create({
 })
 
 function StudentProfile({ student, competencies, notify, saveStudent, loadStudent }) {
-  console.log('rerender')
   function editStudent(competencyId, outcomeIndex, stageIndex) {
     const markedProgress = updateIn(
       student,
@@ -35,13 +36,22 @@ function StudentProfile({ student, competencies, notify, saveStudent, loadStuden
 
     saveStudent(markedReview)
       .then(res => loadStudent(student._id))
-      .then(doc => notify('Marked student progress'))
+      .then(doc => notify(`Marked ${student.name}'s progress`))
       .catch(err => console.error(err))
+  }
+
+  const avatarStyles = {
+    width: cardHeight,
+    height: cardHeight,
+    position: 'absolute',
+    left: 0,
+    top: 0
   }
 
   return (
     <ExpandableCard>
       <header>
+        <Avatar id={student._id} style={avatarStyles}/>
         <div>{student.name}</div>
         <div className={css(typography.email)}>{student.email}</div>
       </header>

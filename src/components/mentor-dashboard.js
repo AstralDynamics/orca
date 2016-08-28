@@ -32,7 +32,9 @@ class MentorDashboard extends React.Component {
     }
 
     function filterOnReview(competency) {
-      // only show competencies that have been marked
+      // TODO this filter currently recieves the competencies list
+      // which doesnt include the students actual progress towards
+      // completion.
       return true
     }
 

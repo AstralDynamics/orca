@@ -1,7 +1,6 @@
 import { createDB } from '../util/db'
 import {
-  STUDENTS_LOADED, STUDENT_LOADED, STUDENTS_LOADING_ERROR,
-  EDIT_STUDENT
+  STUDENTS_LOADED, STUDENT_LOADED, STUDENTS_LOADING_ERROR
 } from '../constants/students'
 
 const db = createDB('students')
@@ -25,11 +24,8 @@ export function loadStudent(id) {
 }
 
 export function saveStudent(doc) {
-  const id = doc._id
   return (dispatch) => {
-    db.put(doc)
-      .then(res => loadStudent(id))
-      .then(act => act(dispatch))
+    return db.put(doc)
   }
 }
 
@@ -41,6 +37,7 @@ export function studentsLoaded(students) {
 }
 
 export function studentLoaded(student) {
+  console.log('load', student._rev)
   return {
     type: STUDENT_LOADED,
     student

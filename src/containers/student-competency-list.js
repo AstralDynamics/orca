@@ -21,7 +21,8 @@ function StudentCompetenciesContainer(props) {
       {...props}
       student={student}
       competencies={competencies}
-      saveStudent={saveStudent} />
+      saveStudent={saveStudent}
+      loadStudent={loadStudent} />
   )
 }
 

@@ -1,16 +1,59 @@
 import React from 'react'
-import Card from './expandable-card';
+import { updateIn, setIn } from 'zaphod/compat'
+import Card from './expandable-card'
 import LearningOutcome from './learning-outcome'
 
 import { searchFor } from '../util/search'
+
+function StudentCompetencyList({
+  competencies,
+  year,
+  query='',
+  student,
+  saveStudent,
+  loadStudent
+}) {
+  console.log('new', student)
+
+  function editCompetency(competency, id) {
+    const newStudent = setIn(
+      student,
+      ['competencies', id],
+      competency
+    )
+
+    saveStudent(newStudent)
+      .then(res => loadStudent(student._id))
+      .catch(err => console.error(err))
+  }
+
+  return (
+    <div>
+      {competencies
+        .filter(comp => searchFor(query)(comp.doc.name))
+        .filter(comp => comp.doc.year === year)
+        .map(comp => (
+          <Competency
+            key={comp.id}
+            competency={comp}
+            editCompetency={editCompetency}
+            studentCompetency={student.competencies[comp.id]} />
+        ))}
+    </div>
+  )
+}
 
 function Competency({ competency, studentCompetency, editCompetency }) {
   const { id, doc } = competency
 
   function onMark(outcomeIndex, stageIndex) {
-    const comp = studentCompetency.outcomes[outcomeIndex][stageIndex]
-    comp.review = !comp.review
-    editCompetency(comp)
+    const newComp = updateIn(
+      studentCompetency,
+      ['outcomes', outcomeIndex, stageIndex, 'review'],
+      review => !review
+    );
+
+    editCompetency(newComp, id)
   }
 
   return (
@@ -33,32 +76,6 @@ function Competency({ competency, studentCompetency, editCompetency }) {
   )
 }
 
-function StudentCompetencyList({
-  competencies,
-  year,
-  query='',
-  student,
-  saveStudent
-}) {
-  function editCompetency() {
-    saveStudent(student)
-  }
-
-  return (
-    <div>
-      {competencies
-        .filter(comp => searchFor(query)(comp.doc.name))
-        .filter(comp => comp.doc.year === year)
-        .map(comp => (
-          <Competency
-            key={comp.id}
-            competency={comp}
-            editCompetency={editCompetency}
-            studentCompetency={student.competencies[comp.id]} />
-        ))}
-    </div>
-  )
-}
 
 export default StudentCompetencyList
 

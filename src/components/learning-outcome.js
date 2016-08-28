@@ -52,51 +52,20 @@ const styles = StyleSheet.create({
   }
 })
 
-function Marker({ progress=0, review=false }) {
-  const hasPartial = (progress === 1)
-  const isComplete = (progress === 2)
-
+function LearningOutcome({ outcome, studentOutcome, onMark }) {
   return (
-    <div className={css(
-      styles.marker,
-      review && styles.review,
-      hasPartial && styles.partial,
-      isComplete && styles.complete,
-      hasPartial && review && styles.partialReview
-    )}></div>
-  )
-}
-
-function progressHint(progress) {
-  if(progress === 0) {
-    return '(N/A)'
-  }
-  if(progress === 1) {
-    return '(Partial)'
-  }
-  if(progress === 2) {
-    return '(Complete)'
-  }
-}
-
-function Stage({ stage, studentStage={}, isFirst, isLast }) {
-  const { progress, review } = studentStage
-
-  return (
-    <div
-      className={css(
-        styles.content,
-        isFirst && styles.first,
-        isLast && styles.last
-      )}>
-      <Marker progress={progress} review={review} />
-      <span className={css(typography.label)}>
-        {stage}
+    <div>
+      <span className={css(typography.title)}>
+        {outcome.title}
       </span>
-      <br />
-      <span className={css(typography.hint)}>
-        {progressHint(progress)}
-      </span>
+      <div className={css(styles.outcome)}>
+        <Stages
+          stages={outcome.stages}
+          studentStages={studentOutcome}
+          onMark={onMark} />
+      </div>
+      <div className={css(styles.notes)}>
+      </div>
     </div>
   )
 }
@@ -128,22 +97,53 @@ function Stages({ stages, studentStages=[], onMark }) {
   )
 }
 
-function LearningOutcome({ outcome, studentOutcome, onMark }) {
+function Stage({ stage, studentStage={}, isFirst, isLast }) {
+  const { progress, review } = studentStage
+
   return (
-    <div>
-      <span className={css(typography.title)}>
-        {outcome.title}
+    <div
+      className={css(
+        styles.content,
+        isFirst && styles.first,
+        isLast && styles.last
+      )}>
+      <Marker progress={progress} review={review} />
+      <span className={css(typography.label)}>
+        {stage}
       </span>
-      <div className={css(styles.outcome)}>
-        <Stages
-          stages={outcome.stages}
-          studentStages={studentOutcome}
-          onMark={onMark} />
-      </div>
-      <div className={css(styles.notes)}>
-      </div>
+      <br />
+      <span className={css(typography.hint)}>
+        {progressHint(progress)}
+      </span>
     </div>
   )
+}
+
+function Marker({ progress=0, review=false }) {
+  const hasPartial = (progress === 1)
+  const isComplete = (progress === 2)
+
+  return (
+    <div className={css(
+      styles.marker,
+      review && styles.review,
+      hasPartial && styles.partial,
+      isComplete && styles.complete,
+      hasPartial && review && styles.partialReview
+    )}></div>
+  )
+}
+
+function progressHint(progress) {
+  if(progress === 0) {
+    return '(N/A)'
+  }
+  if(progress === 1) {
+    return '(Partial)'
+  }
+  if(progress === 2) {
+    return '(Complete)'
+  }
 }
 
 export default LearningOutcome

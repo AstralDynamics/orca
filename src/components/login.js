@@ -22,8 +22,11 @@ export default class Login extends React.Component {
     }
   }
   tryLogin = (event) => {
-    if(this.state.username && this.state.password) {
-      this.props.onSubmit(this.state)
+    const { username, password } = this.state
+    const { onSubmit } = this.props
+
+    if(username && password) {
+      onSubmit(username, password)
       this.setState({ isLoading: true })
     } else {
       this.setState({ hasAttemptedLogin: true })

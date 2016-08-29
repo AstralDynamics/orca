@@ -1,25 +1,6 @@
-import React from 'react'
 import { connect } from 'react-redux'
 import Login from '../components/login'
 import { login } from '../actions/auth'
-
-// TODO refactor this to remove this intemediary component
-
-class LoginContainer extends React.Component {
-  constructor() {
-    super()
-    this.state = { }
-    this.tryLogin = this.tryLogin.bind(this)
-  }
-  tryLogin({ username, password }) {
-    const { login } = this.props
-    login(username, password)
-  }
-  render() {
-    const { errors } = this.props
-    return <Login onSubmit={this.tryLogin} errors={errors} />
-  }
-}
 
 function mapState(state) {
   return {
@@ -28,8 +9,8 @@ function mapState(state) {
 }
 
 const mapActions = {
-  login
+  onSubmit: login
 }
 
-export default connect(mapState, mapActions)(LoginContainer)
+export default connect(mapState, mapActions)(Login)
 

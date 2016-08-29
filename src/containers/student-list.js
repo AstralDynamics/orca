@@ -5,6 +5,14 @@ import { loadStudents } from '../actions/students'
 import { loadCompetencies } from '../actions/competency'
 import StudentList from '../components/student-list'
 
+/**
+ * When this <StudentCompetenciesContainer /> is rendered, it
+ * checks whether the store already contains the required
+ * student and competencies, if not then fetch them.
+ *
+ * When both resources are available, it renders the <StudentList />
+ * and passes the data and required actions down to it.
+ */
 function StudentListContainer(props) {
   const { students, competencies } = props
   const { loadStudents, loadCompetencies } = props

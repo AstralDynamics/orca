@@ -1,6 +1,11 @@
 import React from 'react'
 import { connect } from 'react-redux'
 
+/**
+ * HOC that renders takes a map of role => Component, then
+ * uses the roles of the authenticated user in the store to decide
+ * which <Component /> to render. Otherwise, render <DefaultView />
+ */
 export function withRole(roleMap, DefaultView) {
   function Role(props) {
     const { myRoles } = props

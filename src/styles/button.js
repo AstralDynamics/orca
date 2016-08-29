@@ -17,7 +17,32 @@ export const button = StyleSheet.create({
     },
     ':active': {
       background: colors.darkBlue,
+      boxShadow: 'none'
     }
+  },
+  circular: {
+    borderRadius: '50%',
+    fontSize: '2rem',
+    height: '2em',
+    width: '2em',
+    lineHeight: '2em',
+    textAlign: 'center',
+    padding: 0
+  },
+  floating: {
+    position: 'fixed',
+    bottom: 0,
+    zIndex: 100
+  },
+  plain: {
+    background: colors.lightGrey,
+    color: colors.darkGrey,
+    ':active': {
+      background: colors.grey
+    }
+  },
+  warning: {
+    background: colors.error
   }
 })
 

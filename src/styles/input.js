@@ -20,4 +20,19 @@ export const textInput = StyleSheet.create({
   }
 })
 
+export const textarea = StyleSheet.create({
+  default: {
+    fontFamily: 'inherit',
+    width: '100%',
+    boxSizing: 'border-box',
+    background: colors.white,
+    fontSize: '1em',
+    color: colors.grey,
+    border: 0,
+    ':focus': {
+      color: colors.darkGrey
+    }
+  }
+})
+
 

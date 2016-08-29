@@ -2,6 +2,7 @@ import React from 'react'
 import { updateIn, getIn } from 'zaphod/compat'
 import Card from './expandable-card'
 import LearningOutcome from './learning-outcome'
+import { ProgressNotes } from './feedback-entry'
 import { COMPLETE } from '../constants/progress'
 
 import { searchFor } from '../util/search'
@@ -33,7 +34,7 @@ function StudentCompetencyList({
   function editCompetency(id, outcomeIndex, stageIndex) {
     const progress = getIn(
       student,
-      ['competencies', id, 'outcomes', outcomeIndex, stageIndex, 'progress']
+      ['competencies', id, 'outcomes', outcomeIndex, 'stages', stageIndex, 'progress']
     )
 
     if(progress === COMPLETE) {
@@ -43,12 +44,12 @@ function StudentCompetencyList({
 
     const review = getIn(
       student,
-      ['competencies', id, 'outcomes', outcomeIndex, stageIndex, 'review']
+      ['competencies', id, 'outcomes', outcomeIndex, 'stages', stageIndex, 'review']
     )
 
     const newStudent = updateIn(
       student,
-      ['competencies', id, 'outcomes', outcomeIndex, stageIndex, 'review'],
+      ['competencies', id, 'outcomes', outcomeIndex, 'stages', stageIndex, 'review'],
       review => !review
     )
 
@@ -94,7 +95,15 @@ function Competency({ competency, studentCompetency, editCompetency, notify }) {
   function getStudentOutcome(index) {
     return getIn(
       studentCompetency,
-      ['outcomes', index],
+      ['outcomes', index, 'stages'],
+      []
+    )
+  }
+
+  function getOutcomeNotes(index) {
+    return getIn(
+      studentCompetency,
+      ['outcomes', index, 'notes'],
       []
     )
   }
@@ -111,6 +120,8 @@ function Competency({ competency, studentCompetency, editCompetency, notify }) {
               outcome={outcome}
               studentOutcome={getStudentOutcome(index)}
               onMark={stageIndex => editCompetency(id, index, stageIndex)} />
+            <ProgressNotes
+              notes={getOutcomeNotes(index)} />
             {(index !== doc.outcomes.length - 1) && <hr />}
           </div>
         ))}

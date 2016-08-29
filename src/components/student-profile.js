@@ -1,11 +1,12 @@
 import React from 'react'
-import { updateIn, setIn } from 'zaphod/compat'
+import { updateIn, setIn, getIn, push } from 'zaphod/compat'
 
 import ExpandableCard from './expandable-card'
-import { cardHeight } from './card'
 import Avatar from './avatar'
+import { ProgressNotesEntry } from './feedback-entry'
 import LearningOutcome from './learning-outcome'
 import { cycleProgress } from '../util/progress'
+import { cardHeight } from './card'
 
 import typography from '../styles/typography'
 import { css, StyleSheet } from 'aphrodite'
@@ -36,25 +37,43 @@ const styles = StyleSheet.create({
  * so that any updates can be shown.
  */
 function StudentProfile(props) {
-  const { student, competencies } = props
+  const { student, competencies, staffId } = props
   const { notify, saveStudent, loadStudent } = props
 
   function editStudent(competencyId, outcomeIndex, stageIndex) {
     const markedProgress = updateIn(
       student,
-      ['competencies', competencyId, 'outcomes', outcomeIndex, stageIndex, 'progress'],
+      ['competencies', competencyId, 'outcomes', outcomeIndex, 'stages', stageIndex, 'progress'],
       cycleProgress
     )
 
     const markedReview = setIn(
       markedProgress,
-      ['competencies', competencyId, 'outcomes', outcomeIndex, stageIndex, 'review'],
+      ['competencies', competencyId, 'outcomes', outcomeIndex, 'stages', stageIndex, 'review'],
       false
     )
 
     saveStudent(markedReview)
       .then(res => loadStudent(student._id))
       .then(doc => notify(`Marked ${student.name}'s progress`))
+      .catch(err => console.error(err))
+  }
+
+  function addFeedback(competencyId, outcomeIndex, feedback) {
+    const withFeedback = updateIn(
+      student,
+      ['competencies', competencyId, 'outcomes', outcomeIndex, 'notes'],
+      (notes=[]) => push(notes, {
+        _id: Math.random(),
+        from: staffId,
+        date: Date.now(),
+        text: feedback
+      })
+    )
+
+    saveStudent(withFeedback)
+      .then(res => loadStudent(student._id))
+      .then(doc => notify(`Left progress note for ${student.name}.`))
       .catch(err => console.error(err))
   }
 
@@ -75,13 +94,14 @@ function StudentProfile(props) {
       </header>
       <StudentCompetencies
         onEdit={editStudent}
+        addFeedback={addFeedback}
         student={student}
         competencies={competencies} />
     </ExpandableCard>
   )
 }
 
-function StudentCompetencies({ student, competencies, onEdit }) {
+function StudentCompetencies({ student, competencies, onEdit, addFeedback }) {
   const studentCompetencyIds = Object.keys(student.competencies)
 
   return (
@@ -92,6 +112,22 @@ function StudentCompetencies({ student, competencies, onEdit }) {
 
         if(!competency) return null
 
+        function getStudentOutcome(index) {
+          return getIn(
+            studentCompetency,
+            ['outcomes', index, 'stages'],
+            []
+          )
+        }
+
+        function getOutcomeNotes(index) {
+          return getIn(
+            studentCompetency,
+            ['outcomes', index, 'notes'],
+            []
+          )
+        }
+
         return (
           <section key={id}>
             <header className={css(styles.heading)}>
@@ -101,8 +137,11 @@ function StudentCompetencies({ student, competencies, onEdit }) {
               <div key={index}>
                 <LearningOutcome
                   outcome={outcome}
-                  studentOutcome={studentCompetency.outcomes[index]}
+                  studentOutcome={getStudentOutcome(index)}
                   onMark={stageIndex => onEdit(id, index, stageIndex)} />
+                <ProgressNotesEntry
+                  addFeedback={text => addFeedback(id, index, text)}
+                  notes={getOutcomeNotes(index)} />
                 {(index !== competency.doc.outcomes.length - 1) && <hr />}
               </div>
             ))}

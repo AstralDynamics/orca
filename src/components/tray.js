@@ -20,12 +20,14 @@ const styles = StyleSheet.create({
 /**
  * <Tray /> is a utility for displaying fixed position elements.
  */
-function Tray({ position, children }) {
+function Tray({ position, children, zIndex=1 }) {
   return (
-    <div className={css(
-      styles.tray,
-      styles[position]
-    )}>
+    <div
+      style={{ zIndex }}
+      className={css(
+        styles.tray,
+        styles[position]
+      )}>
       {children}
     </div>
   )

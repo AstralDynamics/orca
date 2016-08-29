@@ -5,10 +5,10 @@ import { repeatedly } from 'zaphod/compat'
 
 const avatarCache = {}
 
-function Avatar({ width=80, height=80, id, style }) {
+function Avatar({ width=80, height=80, id, style, hue=214 }) {
   if(!avatarCache.hasOwnProperty(id)) {
     const shapes = makeAvatar(width, height, makeRNG(id))
-    avatarCache[id] = drawAvatar(width, height, shapes)
+    avatarCache[id] = drawAvatar(width, height, shapes, hue)
   }
 
   const dataUrl = avatarCache[id]
@@ -30,20 +30,20 @@ Avatar.propTypes = {
   style: React.PropTypes.object
 }
 
-function drawAvatar(width, height, shapes) {
+function drawAvatar(width, height, shapes, hue) {
   const canvas = document.createElement('canvas')
   canvas.width = width
   canvas.height = height
 
   const ctx = canvas.getContext('2d')
-  ctx.fillStyle = colors.blue
+  ctx.fillStyle = `hsl(${hue}, 66%, 45%)`
   ctx.fillRect(0, 0, width, height)
 
   shapes.forEach(shape => {
     const { saturation, lightness } = shape
     const [x, y] = shape.points[0]
 
-    ctx.fillStyle = `hsl(214, ${saturation}%, ${lightness}%)`
+    ctx.fillStyle = `hsl(${hue}, ${saturation}%, ${lightness}%)`
     ctx.beginPath()
     ctx.moveTo(x, y)
     shape.points.forEach(

@@ -1,7 +1,8 @@
 import React from 'react'
-import { updateIn, setIn, getIn } from 'zaphod/compat'
+import { updateIn, getIn } from 'zaphod/compat'
 import Card from './expandable-card'
 import LearningOutcome from './learning-outcome'
+import { COMPLETE } from '../constants/progress'
 
 import { searchFor } from '../util/search'
 
@@ -15,11 +16,21 @@ function StudentCompetencyList({
   notify
 }) {
 
-  function editCompetency(competency, id) {
-    const newStudent = setIn(
+  function editCompetency(id, outcomeIndex, stageIndex) {
+    const progress = getIn(
       student,
-      ['competencies', id],
-      competency
+      ['competencies', id, 'outcomes', outcomeIndex, stageIndex, 'progress']
+    )
+
+    if(progress === COMPLETE) {
+      notify('Can\'t mark completed outcome for review!', { theme: 'error' })
+      return
+    }
+
+    const newStudent = updateIn(
+      student,
+      ['competencies', id, 'outcomes', outcomeIndex, stageIndex, 'review'],
+      review => !review
     )
 
     saveStudent(newStudent)
@@ -37,6 +48,7 @@ function StudentCompetencyList({
           <Competency
             key={comp.id}
             competency={comp}
+            notify={notify}
             editCompetency={editCompetency}
             studentCompetency={student.competencies[comp.id]} />
         ))}
@@ -44,18 +56,8 @@ function StudentCompetencyList({
   )
 }
 
-function Competency({ competency, studentCompetency, editCompetency }) {
+function Competency({ competency, studentCompetency, editCompetency, notify }) {
   const { id, doc } = competency
-
-  function onMark(outcomeIndex, stageIndex) {
-    const newComp = updateIn(
-      studentCompetency,
-      ['outcomes', outcomeIndex, stageIndex, 'review'],
-      review => !review
-    );
-
-    editCompetency(newComp, id)
-  }
 
   function getStudentOutcome(index) {
     return getIn(
@@ -76,7 +78,7 @@ function Competency({ competency, studentCompetency, editCompetency }) {
             <LearningOutcome
               outcome={outcome}
               studentOutcome={getStudentOutcome(index)}
-              onMark={stageIndex => onMark(index, stageIndex)} />
+              onMark={stageIndex => editCompetency(id, index, stageIndex)} />
             {(index !== doc.outcomes.length - 1) && <hr />}
           </div>
         ))}

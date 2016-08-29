@@ -16,11 +16,15 @@ const styles = StyleSheet.create({
     zIndex: 10,
     padding: `0 ${gaps.medium}`,
     transform: 'translateY(-3em)',
-    transitionDuration: '.2s'
+    transitionDuration: '.2s',
+    transitionProperty: 'transform'
   },
   active: {
     transform: 'translateY(0)',
     transitionDuration: '.4s'
+  },
+  error: {
+    background: colors.error
   }
 })
 
@@ -38,12 +42,13 @@ class Notifications extends React.Component {
     )
   }
   render() {
-    const { expired, text } = (this.state || { expired: true })
+    const { expired, text, theme } = (this.state || { expired: true })
 
     return (
       <div className={css(
         styles.notification,
-        !expired && styles.active
+        !expired && styles.active,
+        styles[theme]
       )}>
         {text}
       </div>

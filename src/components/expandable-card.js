@@ -15,7 +15,7 @@ const styles = StyleSheet.create({
 class ExpandableCard extends React.Component {
   constructor() {
     super()
-    this.state = { expanded: true }
+    this.state = { expanded: false }
     this.toggle = this.toggle.bind(this)
   }
   toggle() {

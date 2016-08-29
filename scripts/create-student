@@ -1,0 +1,24 @@
+#!/usr/bin/env bash
+
+COUCH_URL="http://${COUCH_USER}:${COUCH_PASS}@localhost:5984"
+NAME=$1
+PASS=$2
+FULLNAME=$3
+EMAIL=$4
+YEAR=$5
+ID=org.couchdb.user:$NAME
+
+JSON='{ "_id": "'$ID'", "type": "user", "roles": ["student"], "name": "'$NAME'", "password": "'$PASS'" }'
+curl \
+  -H Content-Type:application/json \
+  -X PUT \
+  $COUCH_URL/_users/$ID \
+  -d "$JSON"
+
+JSON='{ "studentID": "'$ID'", "name": "'$FULLNAME'", "email": "'$EMAIL'", "competencies": "{}", "year": '$YEAR'}'
+curl \
+  -H Content-Type:application/json \
+  -X PUT \
+  $COUCH_URL/students/$NAME \
+  -d "$JSON"
+

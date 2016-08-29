@@ -17,10 +17,6 @@ function StudentCompetencyList({
 }) {
 
   function editCompetency(id, outcomeIndex, stageIndex) {
-    console.log(student)
-    console.log(
-      ['competencies', id, 'outcomes', outcomeIndex, stageIndex, 'review']
-    )
     const progress = getIn(
       student,
       ['competencies', id, 'outcomes', outcomeIndex, stageIndex, 'progress']

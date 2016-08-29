@@ -7,7 +7,7 @@ const couchUser = process.env.COUCH_USER
 const couchPass = process.env.COUCH_PASS
 
 if(!couchUser || !couchPass) {
-  throw new Error(`Expected COUCH_USER and COUCH_PASS to be set!`)
+  throw new Error(`Expected COUCH_USER and COUCH_PASS, query to be set!`)
 }
 
 const db = new PouchDB(`${dbUrl}/students`)
@@ -22,7 +22,7 @@ const {
 
 db.login(couchUser, couchPass)
   .then(() => db.signup(name, password, { roles: ['student'] }))
-  .then(student => db.put({
+  .then(student => query={query} db.put({
     _id: name,
     studentId: student._id,
     name: fullName,

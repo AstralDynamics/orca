@@ -75,6 +75,8 @@ function StudentCompetencies({ student, competencies, onEdit }) {
         const competency = competencies.find(c => c.id === id)
         const studentCompetency = student.competencies[id]
 
+        if(!competency) return null
+
         return (
           <section key={id}>
             <header className={css(styles.heading)}>

@@ -17,6 +17,10 @@ function StudentCompetencyList({
 }) {
 
   function editCompetency(id, outcomeIndex, stageIndex) {
+    console.log(student)
+    console.log(
+      ['competencies', id, 'outcomes', outcomeIndex, stageIndex, 'review']
+    )
     const progress = getIn(
       student,
       ['competencies', id, 'outcomes', outcomeIndex, stageIndex, 'progress']
@@ -27,6 +31,11 @@ function StudentCompetencyList({
       return
     }
 
+    const review = getIn(
+      student,
+      ['competencies', id, 'outcomes', outcomeIndex, stageIndex, 'review']
+    )
+
     const newStudent = updateIn(
       student,
       ['competencies', id, 'outcomes', outcomeIndex, stageIndex, 'review'],
@@ -35,7 +44,11 @@ function StudentCompetencyList({
 
     saveStudent(newStudent)
       .then(res => loadStudent(student._id))
-      .then(doc => notify('Marked for mentor review!'))
+      .then(doc => notify(
+        review
+          ? 'Unmarked from mentor review'
+          : 'Marked for mentor review!'
+      ))
       .catch(err => console.error(err))
   }
 

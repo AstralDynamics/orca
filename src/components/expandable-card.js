@@ -22,7 +22,7 @@ class ExpandableCard extends React.Component {
     this.setState({ expanded: !this.state.expanded })
   }
   render() {
-    let { children, leftPad } = this.props
+    let { children } = this.props
     children = children instanceof Array ? children : [children]
     const [card, ...extra] = children
     const { expanded } = this.state

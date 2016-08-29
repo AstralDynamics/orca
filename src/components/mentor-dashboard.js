@@ -1,10 +1,7 @@
 import React from 'react'
 import Selector from './selector'
 import Tray from './tray'
-import ReviewQueue from './review-queue'
 import StudentList from '../containers/student-list'
-import { all } from '../util/fp'
-import { vals } from 'zaphod/compat'
 
 class MentorDashboard extends React.Component {
   constructor() {

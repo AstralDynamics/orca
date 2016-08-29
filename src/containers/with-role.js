@@ -13,6 +13,7 @@ export function withRole(roleMap, DefaultView) {
       }
     }
 
+    console.warn(`No view for roles: ${myRoles}`)
     return <DefaultView {...props} />
   }
 

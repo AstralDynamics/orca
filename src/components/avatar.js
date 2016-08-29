@@ -75,6 +75,7 @@ export default function Avatar({ width=80, height=80, id, style }) {
     src={avatarCache[id]}
     style={style}
     width={width}
-    height={height} />
+    height={height}
+    alt="Avatar" />
 }
 

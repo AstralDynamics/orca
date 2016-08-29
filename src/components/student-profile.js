@@ -20,7 +20,10 @@ const styles = StyleSheet.create({
   }
 })
 
-function StudentProfile({ student, competencies, notify, saveStudent, loadStudent }) {
+function StudentProfile(props) {
+  const { student, competencies } = props
+  const { notify, saveStudent, loadStudent } = props
+
   function editStudent(competencyId, outcomeIndex, stageIndex) {
     const markedProgress = updateIn(
       student,

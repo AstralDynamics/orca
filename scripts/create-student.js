@@ -21,12 +21,12 @@ const {
 } = JSON.parse(json)
 
 db.login(couchUser, couchPass)
-  .then(() => db.signup(name, password))
+  .then(() => db.signup(name, password, { roles: ['student'] }))
   .then(student => db.put({
     _id: name,
-    competencies: [],
     studentId: student._id,
     name: fullName,
+    competencies: {},
     year,
     email
   }))

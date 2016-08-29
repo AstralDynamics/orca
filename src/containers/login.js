@@ -3,6 +3,8 @@ import { connect } from 'react-redux'
 import Login from '../components/login'
 import { login } from '../actions/auth'
 
+// TODO refactor this to remove this intemediary component
+
 class LoginContainer extends React.Component {
   constructor() {
     super()

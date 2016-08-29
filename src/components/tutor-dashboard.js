@@ -1,7 +1,6 @@
 import React from 'react'
 import Selector from './selector'
 import Tray from './tray'
-import ReviewQueue from './review-queue'
 import StudentList from '../containers/student-list'
 
 class TutorDashboard extends React.Component {

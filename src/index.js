@@ -6,15 +6,15 @@ import thunk from 'redux-thunk'
 import { css } from 'aphrodite'
 
 import reducer from './reducers'
+import styles from './styles/global'
+import { autologin } from './actions/auth'
 import { withAuth } from './containers/with-auth'
 import { withRole } from './containers/with-role'
-import { autologin } from './actions/auth'
-import Splash from './components/splash'
 import Notifications from './containers/notifications'
+import Splash from './components/splash'
 import StudentDash from './components/student-dashboard'
 import MentorDash from './components/mentor-dashboard'
 import TutorDash from './components/tutor-dashboard'
-import styles from './styles/global'
 
 const store = createStore(
   reducer,

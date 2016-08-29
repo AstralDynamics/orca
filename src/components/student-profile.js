@@ -49,7 +49,7 @@ function StudentProfile({ student, competencies, notify, saveStudent, loadStuden
   }
 
   return (
-    <ExpandableCard>
+    <ExpandableCard leftPad={true} textLeft={true}>
       <header>
         <Avatar id={student._id} style={avatarStyles}/>
         <div>{student.name}</div>

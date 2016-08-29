@@ -28,16 +28,6 @@ const students = [
   { _id: '@pippin', name: 'Peregrin Took', year: 3, competencies: {} }
 ]
 
-const staff = [
-  { _id: '@gandalf', name: 'Gandalf the Grey' },
-  { _id: '@saruman', name: 'Saruman the White' },
-  { _id: '@radagast', name: 'Radagast the Brown' },
-]
-
-const users = [
-
-]
-
 competenciesDB.login(username, password)
   .then(user => competenciesDB.bulkDocs(competencies))
   .then(users => console.log(users))

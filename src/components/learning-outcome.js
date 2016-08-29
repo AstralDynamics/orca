@@ -58,7 +58,15 @@ const styles = StyleSheet.create({
   }
 })
 
-function LearningOutcome({ outcome, studentOutcome, onMark }) {
+/**
+ * <LearningOutcome /> components need to be passed a learning outcome
+ * from a competency _and_ a students progress towards that learning
+ * outcome, so that progress and review status can be rendered.
+ *
+ * They also take an `onMark` callback which will be called when
+ * a stage is clicked, passing the stage index as the only argument.
+ */
+function LearningOutcome({ outcome, studentOutcome=[], onMark }) {
   return (
     <div className={css(styles.container)}>
       <span className={css(typography.title)}>
@@ -76,7 +84,20 @@ function LearningOutcome({ outcome, studentOutcome, onMark }) {
   )
 }
 
+LearningOutcome.propTypes = {
+  outcome: React.PropTypes.object.isRequired,
+  studentOutcome: React.PropTypes.array,
+  onMark: React.PropTypes.func
+}
+
+LearningOutcome.defaultProps = {
+  onMark() {
+    console.warn('No `onMark` set for <LearningOutcome />')
+  }
+}
+
 function Stages({ stages, studentStages=[], onMark }) {
+  if(studentStages === null) studentStages = []
   const width = Math.floor(100 / stages.length)
 
   return (
@@ -103,7 +124,14 @@ function Stages({ stages, studentStages=[], onMark }) {
   )
 }
 
+Stages.propTypes = {
+  stages: React.PropTypes.array.isRequired,
+  studentStages: React.PropTypes.array,
+  onMark: React.PropTypes.func
+}
+
 function Stage({ stage, studentStage={}, isFirst, isLast }) {
+  if(studentStage === null) studentStage = {}
   const { progress, review } = studentStage
 
   return (
@@ -125,6 +153,13 @@ function Stage({ stage, studentStage={}, isFirst, isLast }) {
   )
 }
 
+Stage.propTypes = {
+  stage: React.PropTypes.string.isRequired,
+  studentStage: React.PropTypes.object,
+  isFirst: React.PropTypes.bool,
+  isLast: React.PropTypes.bool
+}
+
 function Marker({ progress=0, review=false }) {
   const hasPartial = (progress === 1)
   const isComplete = (progress === 2)
@@ -138,6 +173,11 @@ function Marker({ progress=0, review=false }) {
       hasPartial && review && styles.partialReview
     )}></div>
   )
+}
+
+Marker.propTypes = {
+  progress: React.PropTypes.number,
+  review: React.PropTypes.bool
 }
 
 function progressHint(progress) {

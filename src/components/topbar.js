@@ -22,7 +22,10 @@ const styles = StyleSheet.create({
   }
 })
 
-function TopBar({ left, right, children }) {
+/**
+ * <TopBar /> component which will always include a logout button
+ */
+function TopBar({ children }) {
   return (
     <nav className={css(styles.topbar)}>
       {children}

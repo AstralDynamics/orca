@@ -17,12 +17,14 @@ const styles = StyleSheet.create({
   }
 })
 
-function Tray({ position, children, absolute }) {
+/**
+ * <Tray /> is a utility for displaying fixed position elements.
+ */
+function Tray({ position, children }) {
   return (
     <div className={css(
       styles.tray,
-      styles[position],
-      absolute && styles.absolute
+      styles[position]
     )}>
       {children}
     </div>

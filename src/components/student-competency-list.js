@@ -6,6 +6,20 @@ import { COMPLETE } from '../constants/progress'
 
 import { searchFor } from '../util/search'
 
+/**
+ * <StudentCompetencyList /> is the *complex* presentational layer
+ * that allows students to interact with competencies and mark
+ * them for review.
+ *
+ * When a learning outcome stage is marked this component will
+ * create (if necessary) then toggle the review state for that
+ * stage, before passing a new copy of the student to the
+ * `saveStudent` prop callback.
+ *
+ * It also expects a `loadStudent` prop to be present, which when
+ * called with a student id will re-fetch the student from the server
+ * so that any updates can be shown.
+ */
 function StudentCompetencyList({
   competencies,
   year,
@@ -65,6 +79,15 @@ function StudentCompetencyList({
   )
 }
 
+/**
+ * <Competency /> needs to be passed both the definition for a
+ * competency, but also the students own progress towards that
+ * competency too.
+ *
+ * The `editCompetency` prop will be called when the review/progress
+ * for that competency has been changed inside the <LearningOutcome />
+ * component.
+ */
 function Competency({ competency, studentCompetency, editCompetency, notify }) {
   const { id, doc } = competency
 
@@ -72,7 +95,7 @@ function Competency({ competency, studentCompetency, editCompetency, notify }) {
     return getIn(
       studentCompetency,
       ['outcomes', index],
-      {}
+      []
     )
   }
 

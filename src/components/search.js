@@ -14,13 +14,16 @@ const styles = StyleSheet.create({
   }
 })
 
+/**
+ * <Search /> components will call `onSearch` prop any time the search
+ * query changes.
+ */
 class Search extends React.Component {
   constructor() {
     super()
     this.state = { query: '' }
-    this.setQuery = this.setQuery.bind(this)
   }
-  setQuery(event) {
+  setQuery = (event) => {
     const query = event.target.value
     this.setState({ query })
     this.props.onSearch(query)

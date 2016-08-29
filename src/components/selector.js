@@ -52,15 +52,22 @@ const styles = StyleSheet.create({
   }
 })
 
+/**
+ * <Selector /> takes options as props and renders as a multiple
+ * choice bar, presenting all the available options. When clicked
+ * the index for the clicked option will be passed into the `onSelect`
+ * prop function.
+ *
+ * <Selector choices={['Foo', 'Bar']} onSelect={index => log(index)} />
+ */
 class Selector extends React.Component {
   constructor() {
     super()
     this.state = {
       index: 0
     }
-    this.selectIndex = this.selectIndex.bind(this)
   }
-  selectIndex(index) {
+  selectIndex = (index) => {
     this.setState({ index })
     this.props.onSelect(index)
   }
@@ -68,12 +75,13 @@ class Selector extends React.Component {
     const { options, light } = this.props
     const isActive = (index === this.state.index)
     const width = 100 / options.length
+    const inlineStyle = { width: width + '%' }
 
     return (
       <div
         key={option}
         className={css(styles.column)}
-        style={{ width: `${width}%` }}>
+        style={inlineStyle}>
         <a
           href='#'
           onClick={e => this.selectIndex(index)}
@@ -104,7 +112,14 @@ class Selector extends React.Component {
 Selector.defaultProps = {
   onSelect() {
     console.warn('No `onSelect` provided for <Selector />')
-  }
+  },
+  choices: []
+}
+
+
+Selector.propTypes = {
+  onSelect: React.PropTypes.func,
+  choices: React.PropTypes.array
 }
 
 export default Selector

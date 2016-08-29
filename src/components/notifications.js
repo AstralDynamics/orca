@@ -28,6 +28,10 @@ const styles = StyleSheet.create({
   }
 })
 
+/**
+ * <Notification /> is the presentational layer for delivering
+ * floating notifications to the screen.
+ */
 class Notifications extends React.Component {
   constructor({ notification }) {
     super()

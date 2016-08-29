@@ -8,17 +8,14 @@ class MentorDashboard extends React.Component {
     super()
     this.state = { view: 'Review', year: 1 }
     this.views = ['Review', 'Students']
-    this.setView = this.setView.bind(this)
-    this.setYear = this.setYear.bind(this)
-    this.filter = this.filter.bind(this)
   }
-  setView(index) {
+  setView = (index) => {
     this.setState({ view: this.views[index] })
   }
-  setYear(index) {
+  setYear = (index) => {
     this.setState({ year: index + 1 })
   }
-  filter(student) {
+  filter = (student) => {
     return student.year === this.state.year
   }
   render() {

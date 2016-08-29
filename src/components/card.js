@@ -31,7 +31,8 @@ const styles = StyleSheet.create({
   }
 })
 
-function Card({ children, leftPad, textLeft }) {
+function Card({ children, options={} }) {
+  const { leftPad, textLeft } = options
   return (
     <div className={css(
       styles.card,
@@ -43,6 +44,10 @@ function Card({ children, leftPad, textLeft }) {
       </div>
     </div>
   )
+}
+
+Card.propTypes = {
+  options: React.PropTypes.object
 }
 
 export default Card

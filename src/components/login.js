@@ -13,18 +13,15 @@ export default class Login extends React.Component {
       isloading: false,
       hasAttemptedLogin: false
     }
-
-    this.setField = this.setField.bind(this)
-    this.tryLogin = this.tryLogin.bind(this)
   }
-  setField(name) {
+  setField = (name) => {
     return (event) => {
       this.setState({
         [name]: event.target.value
       })
     }
   }
-  tryLogin(event) {
+  tryLogin = (event) => {
     if(this.state.username && this.state.password) {
       this.props.onSubmit(this.state)
       this.setState({ isLoading: true })

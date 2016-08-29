@@ -21,6 +21,10 @@ const styles = StyleSheet.create({
   }
 })
 
+/**
+ * <StudentList /> is the presentational layer that staff will view
+ * students through.
+ */
 class StudentList extends React.Component {
   constructor() {
     super()

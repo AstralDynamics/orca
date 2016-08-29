@@ -2,8 +2,8 @@ import React from 'react'
 import Selector from './selector'
 import Search from './search'
 import Tray from './tray'
-import TopBar from './topbar';
-import Dashboard from './dashboard';
+import TopBar from './topbar'
+import Dashboard from './dashboard'
 import StudentCompetencyList from '../containers/student-competency-list'
 
 import { css, StyleSheet } from 'aphrodite'
@@ -19,14 +19,11 @@ class StudentDashboard extends React.Component {
   constructor() {
     super()
     this.state = { year: 1 }
-
-    this.setYear = this.setYear.bind(this)
-    this.setQuery = this.setQuery.bind(this)
   }
-  setYear(index) {
+  setYear = (index) => {
     this.setState({ year: index + 1 })
   }
-  setQuery(query) {
+  setQuery = (query) => {
     this.setState({ query })
   }
   render() {

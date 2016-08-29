@@ -1,5 +1,5 @@
 import React from 'react'
-import Card from './card';
+import Card from './card'
 import { css, StyleSheet } from 'aphrodite'
 import { colors } from '../constants/styles'
 
@@ -12,6 +12,11 @@ const styles = StyleSheet.create({
   }
 })
 
+/**
+ * <ExpandableCard /> components put their first child inside a card
+ * and the rest of the children inside an expanding tray which will
+ * be displayed if the card is clicked.
+ */
 class ExpandableCard extends React.Component {
   constructor() {
     super()
@@ -22,8 +27,8 @@ class ExpandableCard extends React.Component {
     this.setState({ expanded: !this.state.expanded })
   }
   render() {
-    let { children } = this.props
-    children = children instanceof Array ? children : [children]
+    const _children = this.props.children
+    const children = _children instanceof Array ? _children : [_children]
     const [card, ...extra] = children
     const { expanded } = this.state
 

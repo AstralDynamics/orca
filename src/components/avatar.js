@@ -5,6 +5,31 @@ import { repeatedly } from 'zaphod/compat'
 
 const avatarCache = {}
 
+function Avatar({ width=80, height=80, id, style }) {
+  if(!avatarCache.hasOwnProperty(id)) {
+    const shapes = makeAvatar(width, height, makeRNG(id))
+    avatarCache[id] = drawAvatar(width, height, shapes)
+  }
+
+  const dataUrl = avatarCache[id]
+
+  return (
+    <img
+      src={dataUrl}
+      style={style}
+      width={width}
+      height={height}
+      alt="Avatar" />
+  )
+}
+
+Avatar.propTypes = {
+  width: React.PropTypes.number,
+  height: React.PropTypes.number,
+  id: React.PropTypes.string.isRequired,
+  style: React.PropTypes.object
+}
+
 function drawAvatar(width, height, shapes) {
   const canvas = document.createElement('canvas')
   canvas.width = width
@@ -65,17 +90,5 @@ function makeRNG(id) {
   return (min=0, max=100) => prng.rand(min, max)
 }
 
-export default function Avatar({ width=80, height=80, id, style }) {
-  if(!avatarCache.hasOwnProperty(id)) {
-    const shapes = makeAvatar(width, height, makeRNG(id))
-    avatarCache[id] = drawAvatar(width, height, shapes)
-  }
-
-  return <img
-    src={avatarCache[id]}
-    style={style}
-    width={width}
-    height={height}
-    alt="Avatar" />
-}
+export default Avatar
 

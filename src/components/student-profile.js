@@ -20,6 +20,21 @@ const styles = StyleSheet.create({
   }
 })
 
+/**
+ * <StudentProfile /> is the *complex* presentational layer
+ * that allows staff to interact with students and mark their
+ * competencies with progress.
+ *
+ * When a learning outcome stage is marked this component will
+ * create (if necessary), then remove the review status, then
+ * create (if necessary) and toggle the progress state for that
+ * stage, before passing a new copy of the student to the
+ * `saveStudent` prop callback.
+ *
+ * It also expects a `loadStudent` prop to be present, which when
+ * called with a student id will re-fetch the student from the server
+ * so that any updates can be shown.
+ */
 function StudentProfile(props) {
   const { student, competencies } = props
   const { notify, saveStudent, loadStudent } = props

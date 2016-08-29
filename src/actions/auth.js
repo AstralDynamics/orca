@@ -1,6 +1,8 @@
 import { createDB } from '../util/db'
 import { LOGIN_SUCCESS, LOGIN_FAILED, LOGOUT  } from '../constants/auth'
 
+// Doesn't actually matter which DB is used for performing
+// authentication tasks.
 const db = createDB('competencies')
 
 export function login(username, password) {
@@ -20,6 +22,13 @@ export function autologin() {
       .then(dispatch)
 }
 
+export function logout() {
+  return (dispatch) =>
+    db.logout()
+      .then(() => ({type: LOGOUT }))
+      .then(dispatch)
+}
+
 export function loginSuccess(user) {
   return {
     type: LOGIN_SUCCESS,
@@ -31,13 +40,6 @@ export function loginFailed(error) {
   return {
     type: LOGIN_FAILED,
     error
-  }
-}
-
-export function logout() {
-  db.logout()
-  return {
-    type: LOGOUT
   }
 }
 

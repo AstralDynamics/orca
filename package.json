@@ -12,6 +12,7 @@
     "react-addons-test-utils": "^15.3.0",
     "react-scripts": "0.2.0",
     "redux-thunk": "^2.1.0",
+    "surge": "^0.18.0",
     "tap-spec": "^4.1.1",
     "tape": "^4.6.0"
   },
@@ -31,6 +32,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "postbuild": "surge build/ --domain orca.surge.sh --token bf0098f06318f0060d9e0cd2f602",
     "eject": "react-scripts eject",
     "test": "babel-tape-runner src/**/tests/*.js | tap-spec"
   },

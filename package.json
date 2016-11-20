@@ -35,7 +35,7 @@
     "postbuild": "npm run deploy",
     "eject": "react-scripts eject",
     "test": "babel-tape-runner src/**/tests/*.js | tap-spec",
-    "deploy": "surge build/ --domain orca.surge.sh --token bf0098f06318f0060d9e0cd2f602",
+    "deploy": "surge build/ --domain orca.surge.sh --token bf0098f06318f0060d9e0cd2f602"
   },
   "eslintConfig": {
     "extends": "./node_modules/react-scripts/config/eslint.js"
